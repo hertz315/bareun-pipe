@@ -641,3 +641,21 @@ section {
   0% { transform: translateX(-50%); } 
   100% { transform: translateX(0); } 
 }
+
+/* ==================================================
+   모바일 무한 슬라이드 덜컹거림 및 속도 폭주 긴급 패치
+================================================== */
+
+@media (max-width: 768px) {
+  /* 1. 모바일에서는 기존 CSS 애니메이션을 강제로 끕니다 */
+  .track-left, 
+  .track-right {
+    animation: none !important; 
+  }
+
+  /* 2. 자바스크립트가 부드러운 이동을 제어할 수 있도록 레이아웃 최적화 */
+  .wall-track {
+    will-change: transform;
+    /* 브라우저가 미리 렌더링하도록 힌트를 줍니다. */
+  }
+}
