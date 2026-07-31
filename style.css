@@ -608,3 +608,36 @@ section {
 
 .quick-pop-btn .txt strong { display: block; font-size: 0.9rem; color: #191f28; font-weight: 800; }
 .quick-pop-btn .txt small { font-size: 0.78rem; color: #64748b; }
+
+/* ==================================================
+   현장 사진 벽 애니메이션 부드러움 패치 (속도 조절 및 끊김 방지)
+================================================== */
+
+/* 1. 애니메이션 속도를 훨씬 느리고 부드럽게 변경 (35초 -> 50초, 60초) */
+.track-left { 
+  animation: scrollLeft 50s linear infinite !important; 
+}
+
+.track-right { 
+  animation: scrollRight 60s linear infinite !important; 
+}
+
+/* 2. 끊김 현상(뚝뚝 끊기는 느낌)을 없애고 부드럽게 만드는 핵심 속성 */
+.wall-track { 
+  display: flex; 
+  gap: 14px; 
+  width: max-content; 
+  align-items: center; 
+  will-change: transform; /* 브라우저 렌더링 최적화로 버벅임 제거 */
+}
+
+/* 3. 무한 반복 구간이 딱 맞아떨어지도록 이동 거리 수정 */
+@keyframes scrollLeft { 
+  0% { transform: translateX(0); } 
+  100% { transform: translateX(-50%); } /* -33.33%에서 -50%로 변경해야 끊김 없이 완벽하게 루프됩니다 */
+}
+
+@keyframes scrollRight { 
+  0% { transform: translateX(-50%); } 
+  100% { transform: translateX(0); } 
+}
