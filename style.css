@@ -305,7 +305,7 @@ section {
 .feat-info p { font-size: 0.88rem; color: #4e5968; line-height: 1.55; word-break: keep-all; }
 
 /* 슬라이더 & 갤러리 벽 */
-.sec-gallery-snap { background-color: #f8fafc; text-align: center; overflow: hidden; }
+/* .sec-gallery-snap { background-color: #f8fafc; text-align: center; overflow: hidden; }
 .gallery-tag { font-size: 0.85rem; font-weight: 800; color: #2563eb; letter-spacing: 1.5px; margin-bottom: 8px; }
 .gallery-main-title { font-size: 1.85rem; font-weight: 900; line-height: 1.35; color: #191f28; margin-bottom: 8px; word-break: keep-all; }
 .gallery-sub-text { font-size: 0.85rem; color: #2563eb; font-weight: 700; margin-bottom: 24px; }
@@ -319,7 +319,57 @@ section {
   flex: 0 0 260px; scroll-snap-align: center; background: #ffffff;
   border: 1px solid #e2e8f0; border-radius: 20px; overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05); text-align: left; display: flex; flex-direction: column;
+} */
+
+.sec-gallery-snap { 
+  background-color: #f8fafc; 
+  text-align: center; 
+  overflow: hidden; 
+  width: 100%;
 }
+
+.snap-slider-wrapper {
+  display: flex; 
+  gap: 16px; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  padding-bottom: 16px; 
+  padding-left: 20px; 
+  padding-right: 20px;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.snap-card {
+  flex: 0 0 240px; /* 모바일 화면에서 카드가 알맞게 보이도록 조절 */
+  scroll-snap-align: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+/* Section 5.5: 현장 실제 사진 벽 모바일 대응 */
+.sec-snap-wall { 
+  background-color: #ffffff; 
+  padding: 60px 0; 
+  overflow: hidden; 
+  text-align: center; 
+  width: 100%;
+}
+
+.snap-wall-container {
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px;
+  width: 100%;
+  overflow: hidden; /* 모바일 화면 밖으로 넘치는 현상 방지 */
+}
+
 .snap-img-box {
   width: 100%; height: 220px; background: #f1f5f9; overflow: hidden; padding: 0 !important;
   display: flex; align-items: center; justify-content: center;
