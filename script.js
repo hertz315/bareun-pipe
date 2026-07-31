@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const trackLeft = document.getElementById("trackLeft");
   const trackRight = document.getElementById("trackRight");
 
-  // PC/모바일 구분 없이 무조건 안정적으로 복제 실행
+  // 무조건 안정적으로 복제 실행
   initInfiniteScroll(trackLeft);
   initInfiniteScroll(trackRight);
 
