@@ -610,94 +610,74 @@ section {
 .quick-pop-btn .txt small { font-size: 0.78rem; color: #64748b; }
 
 /* ==================================================
-   현장 사진 벽 애니메이션 부드러움 패치 (속도 조절 및 끊김 방지)
+   현장 사진 벽 무한 슬라이드 (PC & 모바일 완벽 통합 패치)
 ================================================== */
 
-/* 1. 애니메이션 속도를 훨씬 느리고 부드럽게 변경 (35초 -> 50초, 60초) */
-.track-left { 
-  animation: scrollLeft 50s linear infinite !important; 
+.sec-snap-wall {
+  background-color: #ffffff;
+  padding: 60px 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
 }
 
-.track-right { 
-  animation: scrollRight 60s linear infinite !important; 
+.snap-wall-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
 }
 
-/* 2. 끊김 현상(뚝뚝 끊기는 느낌)을 없애고 부드럽게 만드는 핵심 속성 */
-.wall-track { 
-  display: flex; 
-  gap: 14px; 
-  width: max-content; 
-  align-items: center; 
-  will-change: transform; /* 브라우저 렌더링 최적화로 버벅임 제거 */
+.wall-track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  align-items: center;
+  will-change: transform;
 }
 
-/* 3. 무한 반복 구간이 딱 맞아떨어지도록 이동 거리 수정 */
-@keyframes scrollLeft { 
-  0% { transform: translateX(0); } 
-  100% { transform: translateX(-50%); } /* -33.33%에서 -50%로 변경해야 끊김 없이 완벽하게 루프됩니다 */
+/* 자바스크립트가 사진을 1세트 복제(data-cloned="true")한 직후 애니메이션 작동 */
+.wall-track[data-cloned="true"].track-left {
+  animation: scrollSeamlessLeft 45s linear infinite !important;
 }
 
-@keyframes scrollRight { 
-  0% { transform: translateX(-50%); } 
-  100% { transform: translateX(0); } 
+.wall-track[data-cloned="true"].track-right {
+  animation: scrollSeamlessRight 55s linear infinite !important;
 }
 
-/* ==================================================
-   모바일 무한 슬라이드 덜컹거림 및 속도 폭주 긴급 패치
-================================================== */
+.wall-track:hover {
+  animation-play-state: paused;
+}
 
+/* 정확히 50% (복제본 시작 지점)까지 이동하여 100% 끊김 없는 무한 스크롤 구현 */
+@keyframes scrollSeamlessLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollSeamlessRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* 모바일 전용 미세 최적화 */
 @media (max-width: 768px) {
-  /* 1. 모바일에서는 기존 CSS 애니메이션을 강제로 끕니다 */
-  .track-left, 
-  .track-right {
-    animation: none !important; 
+  .wall-img-item {
+    flex: 0 0 140px;
+    height: 120px;
   }
-
-  /* 2. 자바스크립트가 부드러운 이동을 제어할 수 있도록 레이아웃 최적화 */
-  .wall-track {
-    will-change: transform;
-    /* 브라우저가 미리 렌더링하도록 힌트를 줍니다. */
+  .wall-img-item.w-narrow { flex: 0 0 100px; }
+  .wall-img-item.w-wide { flex: 0 0 200px; }
+  
+  /* 모바일에서 속도가 약간 더 편안하게 느껴지도록 조절 */
+  .wall-track[data-cloned="true"].track-left {
+    animation-duration: 40s !important;
   }
-}
-
-/* ==================================================
-   모바일 무한 슬라이드 '안 움직임' 현상 최종 패치
-================================================= */
-
-@media (max-width: 768px) {
-  /* 1. 모바일에서 트랙의 초기 레이아웃을 잡아줍니다. */
-  .wall-track {
-    display: flex;
-    width: max-content; /* 자바스크립트 복제 전에도 너비를 유지하도록 설정 */
-    will-change: transform;
-    animation-play-state: running !important; /* 혹시 멈춰있다면 강제로 실행 */
-  }
-
-  /* 2. 자바스크립트가 복제를 완료하면(cloned="true"), CSS로 애니메이션을 부여합니다. */
-  .wall-track[data-cloned="true"] {
-    animation-timing-function: linear !important;
-    animation-iteration-count: infinite !important;
-  }
-
-  /* 트랙별 애니메이션 적용 (복제 완료 시점) */
-  #trackLeft[data-cloned="true"] {
-    animation-name: jsAnim_trackLeft;
-    animation-duration: 45s; /* 속도 (초) */
-  }
-
-  #trackRight[data-cloned="true"] {
-    animation-name: jsAnim_trackRight;
-    animation-duration: 55s; /* 속도 (초) */
-  }
-
-  /* 3. 이동 거리 정의 (정확히 -50%에서 0, 또는 0에서 -50%로 설정) */
-  @keyframes jsAnim_trackLeft {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* 전체의 절반만큼 왼쪽으로 이동 */
-  }
-
-  @keyframes jsAnim_trackRight {
-    0% { transform: translateX(-50%); } /* 절반 위치에서 시작 */
-    100% { transform: translateX(0); } /* 0으로 복귀 */
+  .wall-track[data-cloned="true"].track-right {
+    animation-duration: 50s !important;
   }
 }
