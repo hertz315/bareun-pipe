@@ -582,6 +582,9 @@ section {
 /* ==================================================
    8. 현장 사진 벽 (크기 억제 긴급 패치)
 ================================================== */
+/* ==================================================
+   8. 현장 사진 벽 (PURE CSS 무한 스크롤 엔진)
+================================================== */
 .sec-snap-wall {
   background-color: #ffffff;
   padding: 50px 0;
@@ -610,7 +613,31 @@ section {
   will-change: transform;
 }
 
-/* 🎯 핵심 수정: 사진 박스가 화면 전체로 커지지 않도록 마이크로 사이즈 지정 */
+/* 윗줄 & 아랫줄 애니메이션 즉시 주입 */
+.wall-track.track-left {
+  animation: pureCssScrollLeft 45s linear infinite !important;
+}
+
+.wall-track.track-right {
+  animation: pureCssScrollRight 55s linear infinite !important;
+}
+
+.wall-track:hover {
+  animation-play-state: paused;
+}
+
+/* 정확히 -50% (HTML에서 복제해 둔 2세트 시작 지점)까지 부드럽게 이동 */
+@keyframes pureCssScrollLeft {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes pureCssScrollRight {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* 사진 카드 규격 지정 */
 .snap-wall-container .wall-img-item {
   flex: 0 0 140px !important;
   width: 140px !important;
@@ -636,7 +663,6 @@ section {
   max-width: 190px !important;
 }
 
-/* 이미지 박스 내부의 원본 사진도 박스 틀에 강제로 맞춤 */
 .snap-wall-container .wall-img-item img,
 .snap-wall-container .wall-img-item img.wall-real-img {
   width: 100% !important;
@@ -647,36 +673,7 @@ section {
   display: block !important;
 }
 
-/* 애니메이션 패치 */
-.wall-track[data-cloned="true"] {
-  animation-timing-function: linear !important;
-  animation-iteration-count: infinite !important;
-}
-
-.wall-track[data-cloned="true"].track-left {
-  animation-name: scrollSeamlessLeft !important;
-  animation-duration: 45s !important;
-}
-
-.wall-track[data-cloned="true"].track-right {
-  animation-name: scrollSeamlessRight !important;
-  animation-duration: 55s !important;
-}
-
-.wall-track:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scrollSeamlessLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes scrollSeamlessRight {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
+/* 모바일 전용 미세 조정 */
 @media (max-width: 768px) {
   .snap-wall-container .wall-img-item {
     flex: 0 0 120px !important;
@@ -696,6 +693,6 @@ section {
     max-width: 160px !important;
   }
 
-  .wall-track[data-cloned="true"].track-left { animation-duration: 35s !important; }
-  .wall-track[data-cloned="true"].track-right { animation-duration: 45s !important; }
+  .wall-track.track-left { animation-duration: 35s !important; }
+  .wall-track.track-right { animation-duration: 45s !important; }
 }
