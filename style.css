@@ -696,3 +696,10 @@ section {
   .wall-track.track-left { animation-duration: 35s !important; }
   .wall-track.track-right { animation-duration: 45s !important; }
 }
+
+/* ==================================================
+   누수 해결 사례 이미지 하단 여백 추가
+================================================== */
+.case-img-box {
+  margin-bottom: 24px !important; /* 사진과 아래 제목 사이 여백 확보 */
+}
