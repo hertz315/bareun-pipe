@@ -1,17 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. 무한 라이브 스냅 자동 슬라이더
+  // 1. 무한 라이브 스냅 자동 슬라이더 (복제 횟수 최적화 및 중복 방지)
   const trackLeft = document.getElementById("trackLeft");
   const trackRight = document.getElementById("trackRight");
 
   function initInfiniteScroll(track) {
     if (!track) return;
+    
+    // 이미 무한 스크롤용 복제가 진행되었다면 중단
+    if (track.getAttribute("data-cloned") === "true") return;
+
     const originalContent = Array.from(track.children);
-    for (let i = 0; i < 3; i++) {
-      originalContent.forEach((item) => {
-        const clone = item.cloneNode(true);
-        track.appendChild(clone);
-      });
-    }
+    // 무한 루프 연결을 위해 딱 1 세트만 뒤에 복제해 붙입니다.
+    originalContent.forEach((item) => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    track.setAttribute("data-cloned", "true");
   }
 
   initInfiniteScroll(trackLeft);
