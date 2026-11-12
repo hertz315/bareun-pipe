@@ -29,9 +29,6 @@
   <meta property="og:url" content="https://bareun-pipe.vercel.app/">
   <meta property="og:locale" content="ko_KR">
 
-  <!-- 스타일시트 -->
-  <link rel="stylesheet" href="style.css">
-
   <!-- 구조화 데이터 -->
 <script type="application/ld+json">
 {
@@ -64,856 +61,613 @@
   }
 }
 </script>
+
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 상단 고정 헤더 -->
+  <a class="skip-link" href="#main">본문 바로가기</a>
   <header class="header">
-    <div class="logo">바른배관설비</div>
-    <a href="tel:010-2195-0351" class="btn-header-call">📞 24시 긴급상담</a>
+    <div class="container header-inner">
+      <a class="brand" href="#main" aria-label="바른배관설비 첫 화면">
+        <img class="brand-logo" src="images/apple-touch-icon.png" alt="" width="48" height="48" decoding="async">
+        <span class="brand-name">바른배관설비</span>
+      </a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#cases">현장 사진</a><a href="#pricing">비용 안내</a><a href="#process">진행 절차</a><a href="#faq">Q&A</a>
+      </nav>
+      <a class="header-call" href="tel:010-2195-0351">24시 전화상담 ↗</a>
+    </div>
   </header>
 
-
-  <!-- Section 1: Hero Main -->
-  <section class="sec-hero hero-full-bg">
-    <div class="hero-bg-overlay"></div>
-    
-    <div class="container hero-content-relative">
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
       
-      <!-- 기존 태그 유지 -->
-      <div class="hero-top-tag">🚨 서울·경기 당일 긴급 출동 가능</div>
-      
-      <!-- 슬로건 -->
-      <h1 class="hero-main-title dark-mode-title">
-        <span class="sky-text">신속한</span> 출동<br>
-        <span class="sky-text">정확한</span> 진단<br>
-        완벽한 <span class="sky-text">해결</span>
-      </h1>
-      
-      <p class="hero-sub-title dark-mode-sub">
-        답답한 미세 누수·배관 고민?<br>
-        배관 전문 엔지니어가 <strong>단번에 잡아드립니다.</strong>
-      </p>
-
-      <!-- 기존 약속 카드 -->
-      <div class="hero-trust-bar-center">
-        <div class="trust-badge-item red-bg">
-          <span class="trust-label">원인 미해결 시</span>
-          <span class="trust-val">0원</span>
-        </div>
-        <div class="trust-badge-item blue-bg">
-          <span class="trust-label">시공 부위 책임</span>
-          <span class="trust-val">2년 무상 A/S</span>
-        </div>
-      </div>
-
-      <!-- 메인 전화 CTA -->
-      <div class="hero-cta-box">
-        <a href="tel:010-2195-0351" class="btn-hero-call">
-          <span class="phone-icon">📞</span>
-          <div class="hero-btn-txt">
-            <strong>24시 대표 직통 긴급 전화 연결</strong>
-            <small>바른배관설비 대표가 직접 상담해 드립니다</small>
-          </div>
-        </a>
-      </div>
-
-      <!-- 상태 바 -->
-      <div class="status-bar dark-status-bar">
-        <span class="green-dot live-blink"></span>
-        <span>현재 <strong class="sky-text">상담 가능 · 24시간 출동 가능</strong></span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Section 1.5: 8대 핵심 수치 증명 섹션 -->
-  <section class="sec-stats-8">
-    <div class="container">
-      
-      <div class="stats-tag">숫자로 증명하는 약속</div>
-      <h2 class="stats-main-title">
-        말로만 말하지 않습니다.<br>
-        <span class="blue-text">숫자로 증명하는 8대 약속</span>
-      </h2>
-      <p class="stats-sub-text">바른배관설비가 현장에서 쌓아온 정직한 수치입니다.</p>
-
-      <!-- 신뢰 증빙 태그 바 -->
-      <div class="trust-proof-badges">
-        <span class="proof-chip">📄 정식 사업자등록업체</span>
-        <span class="proof-chip">🛡️ 2년 무상 보증서 발급</span>
-      </div>
-
-      <div class="stats-grid-8">
-        <div class="stat-card-item">
-          <span class="stat-card-icon">🔍</span>
-          <span class="stat-card-label">누수 탐지 현장</span>
-          <span class="stat-card-val"><strong class="blue-num">500</strong>건+</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">🛠️</span>
-          <span class="stat-card-label">누수 시공 현장</span>
-          <span class="stat-card-val"><strong class="blue-num">300</strong>건+</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">👷‍♂️</span>
-          <span class="stat-card-label">대표 직접 시공</span>
-          <span class="stat-card-val"><strong class="blue-num">100</strong>%</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">🎯</span>
-          <span class="stat-card-label">1일 시공 현장</span>
-          <span class="stat-card-val"><strong class="blue-num">1</strong>곳 집중</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">🛡️</span>
-          <span class="stat-card-label">시공 부위 무상 A/S</span>
-          <span class="stat-card-val"><strong class="blue-num">2</strong>년 보증</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">💰</span>
-          <span class="stat-card-label">원인 미해결 시</span>
-          <span class="stat-card-val"><strong class="blue-num">0</strong>원</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">🚀</span>
-          <span class="stat-card-label">A/S 재방문 케어</span>
-          <span class="stat-card-val"><strong class="blue-num">48</strong>시간 내</span>
-        </div>
-
-        <div class="stat-card-item">
-          <span class="stat-card-icon">📄</span>
-          <span class="stat-card-label">보험 소견서 발급</span>
-          <span class="stat-card-val"><strong class="blue-num">0</strong>원</span>
-        </div>
-      </div>
-
-      <!-- 실증 보증 박스 -->
-      <div class="stats-guarantee-note">
-        💡 <strong>모든 시공 현장 100% 대표 직접 시공</strong> 및 시공 후 <br><strong>서면 무상 보증서</strong>를 발급해 드립니다.
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Section 2: 대표 이야기 -->
-  <section class="sec-story-white">
-    <div class="container">
-      
-      <div class="story-tag">대표 이야기</div>
-      <h2 class="story-main-title">
-        아래층 피해보다,<br>
-        <span class="blue-text">발 동동 구르실 <br>윗집 고객님 마음이더 보였습니다</span>
-      </h2>
-
-      <!-- 대표 프로필 사진 -->
-      <div class="profile-image-box">
-        <img src="images/profile.jpg" alt="바른배관설비 대표 이홍구" class="profile-real-img">
-      </div>
-
-      <!-- 스토리 1: 윗집 고객의 조바심에 대한 솔직한 감정이입 -->
-      <div class="story-article-card">
-        <h3 class="article-subtitle">💡 "평생 한두 번 겪는 누수, 얼마나 조바심이 나실까요?"</h3>
-        <p>
-          아래층 천장에서 물이 새면 아랫집도 답답하지만, 정작 밤잠을 설치며 <em>'비용은 얼마나 나올까?', '업자가 다 깨놓고 못 잡으면 어쩌지?'</em> 발을 동동 구르는 건 윗집 고객님입니다.<br><br>
-          견적은 천차만별이고 다녀간 업자가 못 잡았다는 소문도 들려오니 얼마나 조바심이 나실까요. 저는 현장에 들어설 때마다 그 막막한 마음부터 먼저 헤아립니다.
-        </p>
-      </div>
-
-      <!-- 스토리 2: 배관 엔지니어로서의 고집과 전문성 (순화 및 고급화) -->
-      <div class="story-article-card">
-        <h3 class="article-subtitle">🩺 "치과의사에게 심장수술을 맡길 수는 없습니다"</h3>
-        <p>
-          배관은 건물 내부를 연결하는 '심장 혈관'과 같습니다. 탐지기만 대충 대보고 감에 의존하는 업자와, 보일러 순환 구조와 배관재별 공압 특성을 체계적으로 진단하는 배관 전문 엔지니어는 깊이가 다릅니다.<br><br>
-          배관의 구조적 원리를 정확히 이해해야 멀쩡한 바닥을 파헤치는 일 없이 <strong>집안 손상을 극소화하여 단번에 원인을 잡아냅니다.</strong>
-        </p>
-      </div>
-
-      <!-- 스토리 3: 바른배관설비라는 이름을 내건 진짜 이유 -->
-      <div class="story-article-card">
-        <h3 class="article-subtitle">🤝 "양아치가 많은 업계, 정직과 실력 하나로 시작했습니다"</h3>
-        <p>
-          고무줄 바가지 견적, AS를 요청하면 '폐업했다' 거짓말하고 잠적하는 비양심 업체들을 수없이 보며 깊은 환멸을 느꼈습니다.<br><br>
-          화려한 광고보다 <strong>정직하게 일하면 기존 고객님이 먼저 소개시켜 줄 것이라 믿었습니다.</strong> 그래서 내 이름을 걸고 정직하고 바르게 일하고자 '바른배관설비'를 시작했습니다.
-        </p>
-      </div>
-
-      <!-- 스토리 4: 완벽한 마감 철학 -->
-      <div class="story-article-card">
-        <h3 class="article-subtitle">🧹 "저희에겐 하루 현장이지만, 고객님에겐 평생 살 집입니다"</h3>
-        <p>
-          바쁘다는 핑계로 하루 3~4곳씩 돌면 100% 날림 공사가 됩니다. 그래서 저는 <strong>하루 오직 1현장만 집중</strong>합니다.<br><br>
-          자체 마감이 어설플 것 같으면 내 비용 손해를 보더라도 전문 마감 업자를 불러서까지 완벽하게 만듭니다. 고객님이 평생 사실 공간이기에 마감만큼은 절대 타협하지 않습니다.
-        </p>
-      </div>
-
-      <!-- 대표 서명 박스 -->
-      <div class="representative-signature-box">
-        <span class="rep-badge">바른배관설비 대표 엔지니어</span>
-        <span class="rep-name">이 홍 구</span>
-        <span class="rep-sub-sign">시공 부위 2년 책임 보장</span>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- Section 3: 롱폼형 4대 철통 공약 -->
-  <section class="sec-why-4-long">
-    <div class="container">
-      
-      <div class="why-tag">바른배관설비 약속</div>
-      <h2 class="why-main-title">
-        절대 타협하지 않습니다<br>
-        <span class="blue-text">바른배관설비 철통 공약</span>
-      </h2>
-      <p class="why-sub-text">소비자의 불안을 안심으로 바꾸는 독보적 약속</p>
-
-      <div class="why-long-card-list">
-        
-        <div class="why-long-card">
-          <div class="card-badge-row">
-            <span class="num-badge">공약 01</span>
-            <span class="tag-badge-blue">품질 최우선</span>
-          </div>
-          <h3 class="long-card-title">1일 1현장 집중 시공 원칙</h3>
-          <div class="long-card-body">
-            <p class="story-p">
-              <strong>하루에 3~4곳씩 돌면 돈은 더 벌겠지만, 공사의 질은 무조건 떨어집니다.</strong>
-            </p>
-            <p>
-              다음 현장 약속 시간에 쫓기다 보면 마감 정리가 어설퍼지고, 미세한 누수 반응을 놓치게 됩니다. 
-            </p>
-            <div class="point-box">
-              🎯 <strong>고객님께 드리는 약속</strong><br>
-              바른배관설비는 하루 오직 내 집 한 곳만 예약받습니다. 원인 탐지부터 굴착, 수리, 청소, 완벽 마감까지 시간에 쫓기지 않고 꼼꼼하게 작업합니다.
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">서울·경기 누수탐지 · 배관 수리</p>
+            <h1 id="hero-title">누수의 원인부터<br><em>바르게</em> 찾겠습니다.</h1>
+            <p class="hero-description">어디서 새는지, 어디까지 고쳐야 하는지.<br>대표가 직접 진단하고 수리·마감까지 책임집니다.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="tel:010-2195-0351"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z"/></svg><span>대표에게 전화상담</span></a>
             </div>
+            <p class="hero-note">010-2195-0351 · 지역과 증상을 알려주세요.</p>
           </div>
+          <aside class="consult-note" aria-label="전화 상담 준비 안내">
+            <p class="note-title">무엇부터 말해야 할지<br>막막하셨다면.</p>
+            <ol>
+              <li><span aria-hidden="true">01</span><span>어느 지역인지</span></li>
+              <li><span aria-hidden="true">02</span><span>어디에서 물이 새는지</span></li>
+              <li><span aria-hidden="true">03</span><span>언제부터 시작됐는지</span></li>
+            </ol>
+            <small>아시는 만큼만 말씀해 주세요.<br>대표가 증상을 듣고 방문 일정을 안내합니다.</small>
+          </aside>
         </div>
-
-        <div class="why-long-card">
-          <div class="card-badge-row">
-            <span class="num-badge">공약 02</span>
-            <span class="tag-badge-blue">과학적 진단</span>
-          </div>
-          <h3 class="long-card-title">데이터 기반 정밀 진단 (생땅 굴착 절대 금지)</h3>
-          <div class="long-card-body">
-            <p class="story-p">
-              <strong>어림잡아 '여기 같은데?' 하고 멀쩡한 바닥부터 파헤치는 무능한 공사는 하지 않습니다.</strong>
-            </p>
-            <p>
-              배관 공압 검사, 청음 탐지, 가스 탐지 장비의 명확한 데이터 반응이 없을 때는 절대 함부로 바닥을 깨지 않습니다.
-            </p>
-            <div class="point-box">
-              🎯 <strong>고객님께 드리는 약속</strong><br>
-              배관 구조와 데이터가 확실히 입증된 지점만 최소한으로 최소 굴착하여, 집안의 손상을 극소화하고 공사 범위를 줄여드립니다.
-            </div>
-          </div>
+        <div class="hero-proof" aria-label="서비스 핵심 안내">
+          <p>대표 직접 시공<span>상담부터 마감까지</span></p>
+          <p>원인 미해결 시 0원<span>적용 범위는 아래 안내</span></p>
+          <p>시공 부위 2년 A/S<span>서면 보증서 발급</span></p>
         </div>
-
-        <div class="why-long-card">
-          <div class="card-badge-row">
-            <span class="num-badge">공약 03</span>
-            <span class="tag-badge-red">실력의 자부심</span>
-          </div>
-          <h3 class="long-card-title">원인 미해결 시 0원 원칙</h3>
-          <div class="long-card-body">
-            <p class="story-p">
-              <strong>"원인도 못 찾고 돌아가면서 출장비나 탐지비를 요구하는 업자에 질리셨나요?"</strong>
-            </p>
-            <p>
-              누수를 해결하지 못했다면 기술자로서 돈을 받을 자격이 없습니다. 
-            </p>
-            <div class="point-box red-point">
-              💰 <strong>고객님께 드리는 약속</strong><br>
-              원인을 찾지 못해 누수를 해결해 드리지 못했다면 <strong>출장비, 공압 검사비, 탐지비까지 단 1원도 받지 않습니다.</strong> 100% 무료입니다.
-            </div>
-          </div>
-        </div>
-
-        <div class="why-long-card">
-          <div class="card-badge-row">
-            <span class="num-badge">공약 04</span>
-            <span class="tag-badge-blue">2년 무상 보증</span>
-          </div>
-          <h3 class="long-card-title">마감 완성도 100% 보장 & 책임 무상 A/S</h3>
-          <div class="long-card-body">
-            <p class="story-p">
-              <strong>저희에겐 오늘 하루 오가는 현장이지만, 고객님에겐 평생 사실 집입니다.</strong>
-            </p>
-            <p>
-              마감 완성도가 떨어질 것 같으면 내 비용 손해를 보더라도 전문 마감 업자를 불러서까지 완벽하게 만듭니다.
-            </p>
-            <div class="point-box">
-              🛡️ <strong>고객님께 드리는 약속</strong><br>
-              저희가 시공한 부위에 문제 발생 시, 연락 회피 없이 늦어도 <strong>48시간 이내 무상 재방문</strong>하여 끝까지 책임집니다. (2년 무상 보증서 서면 발급)
-            </div>
-          </div>
-        </div>
-
       </div>
+    </section>
 
+    <nav class="quick-nav container" aria-label="모바일 주요 메뉴">
+      <a href="#cases">현장 사진</a><a href="#pricing">비용 안내</a><a href="#process">진행 절차</a><a href="#faq">Q&A</a>
+    </nav>
+
+    <section class="section" id="cases" aria-labelledby="cases-title"><div class="container">
+<div class="section-heading field-heading"><div><p class="section-number">01 / 작업별 현장 기록</p><h2 id="cases-title">탐지부터 마감까지,<br>사진으로 보는 작업 과정</h2></div><p>현장 점검 → 정밀 탐지 → 굴착·배관 수리 → 복구·마감<br>옆으로 넘기고, 사진을 눌러 크게 살펴보세요.</p></div>
+<div class="process-photos">
+<div id="process-photos" class="field-gallery process-gallery" role="region" aria-label="탐지부터 마감까지 작업 과정" tabindex="0"><figure class="field-slide" data-category="prepare">
+  <a href="images/optimized/167c5be772c5-1800.webp" aria-label="사전 보양 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/167c5be772c5-480.webp" alt="사전 보양" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/167c5be772c5-320.webp 320w, images/optimized/167c5be772c5-480.webp 480w, images/optimized/167c5be772c5-640.webp 640w, images/optimized/167c5be772c5-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="3024" height="4032">
+</div></a>
+  <figcaption><span class="field-index">현장 점검·준비</span><strong>사전 보양</strong><p class="work-description">시공 전 주변 공간을 보호하는 작업</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="prepare">
+  <a href="images/optimized/fd53774b3500-1800.webp" aria-label="배관 현장 확인 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/fd53774b3500-480.webp" alt="남양주 펜션 보일러 기계실 배관 현장" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/fd53774b3500-320.webp 320w, images/optimized/fd53774b3500-480.webp 480w, images/optimized/fd53774b3500-640.webp 640w, images/optimized/fd53774b3500-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="3024" height="4032">
+</div></a>
+  <figcaption><span class="field-index">현장 점검·준비</span><strong>배관 현장 확인</strong><p class="work-description">보일러 기계실의 배관 현장 기록</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="detect">
+  <a href="images/optimized/8c8fb990a4e6-1800.webp" aria-label="정밀 탐지 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/8c8fb990a4e6-480.webp" alt="정밀 탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/8c8fb990a4e6-320.webp 320w, images/optimized/8c8fb990a4e6-480.webp 480w, images/optimized/8c8fb990a4e6-640.webp 640w, images/optimized/8c8fb990a4e6-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="5712">
+</div></a>
+  <figcaption><span class="field-index">정밀 탐지</span><strong>정밀 탐지</strong><p class="work-description">누수 원인을 좁히는 탐지 작업</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="detect">
+  <a href="images/optimized/881ede5830b0-1800.webp" aria-label="공압·가스 탐지 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/881ede5830b0-480.webp" alt="정밀 탐지 과정" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/881ede5830b0-320.webp 320w, images/optimized/881ede5830b0-480.webp 480w, images/optimized/881ede5830b0-640.webp 640w, images/optimized/881ede5830b0-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="5712">
+</div></a>
+  <figcaption><span class="field-index">정밀 탐지</span><strong>공압·가스 탐지</strong><p class="work-description">배관 압력과 가스 반응을 확인하는 과정</p>
+  </figcaption>
+</figure>
+<figure class="field-slide" data-category="repair">
+  <a href="images/optimized/325b799e0528-1800.webp" aria-label="최소 굴착 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/325b799e0528-480.webp" alt="최소 굴착" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/325b799e0528-320.webp 320w, images/optimized/325b799e0528-480.webp 480w, images/optimized/325b799e0528-640.webp 640w, images/optimized/325b799e0528-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="3024" height="4032">
+</div></a>
+  <figcaption><span class="field-index">굴착·배관 수리</span><strong>최소 굴착</strong><p class="work-description">확인한 지점을 중심으로 바닥 굴착</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="repair">
+  <a href="images/optimized/9b9fca4a8606-1800.webp" aria-label="누수 지점 굴착 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/9b9fca4a8606-480.webp" alt="최소 굴착" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/9b9fca4a8606-320.webp 320w, images/optimized/9b9fca4a8606-480.webp 480w, images/optimized/9b9fca4a8606-640.webp 640w, images/optimized/9b9fca4a8606-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="3024" height="4032">
+</div></a>
+  <figcaption><span class="field-index">굴착·배관 수리</span><strong>누수 지점 굴착</strong><p class="work-description">원인 확인 후 필요한 범위의 굴착</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="repair">
+  <a href="images/optimized/f311c52163b3-1800.webp" aria-label="배관 교체 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/f311c52163b3-480.webp" alt="배관 교체" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/f311c52163b3-320.webp 320w, images/optimized/f311c52163b3-480.webp 480w, images/optimized/f311c52163b3-640.webp 640w, images/optimized/f311c52163b3-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="5712">
+</div></a>
+  <figcaption><span class="field-index">굴착·배관 수리</span><strong>배관 교체</strong><p class="work-description">손상된 배관의 보수·교체 작업</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="finish">
+  <a href="images/optimized/070c7998c94d-1800.webp" aria-label="복구 마감 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/070c7998c94d-480.webp" alt="복구 마감" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/070c7998c94d-320.webp 320w, images/optimized/070c7998c94d-480.webp 480w, images/optimized/070c7998c94d-640.webp 640w, images/optimized/070c7998c94d-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="5712">
+</div></a>
+  <figcaption><span class="field-index">복구·마감</span><strong>복구 마감</strong><p class="work-description">작업 부위의 타일·미장 복구</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="finish">
+  <a href="images/optimized/472c6955c4bb-1800.webp" aria-label="현장 정리 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/472c6955c4bb-480.webp" alt="현장 정리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/472c6955c4bb-320.webp 320w, images/optimized/472c6955c4bb-480.webp 480w, images/optimized/472c6955c4bb-640.webp 640w, images/optimized/472c6955c4bb-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="5712">
+</div></a>
+  <figcaption><span class="field-index">복구·마감</span><strong>현장 정리</strong><p class="work-description">작업을 마친 뒤 주변 공간 정리</p></figcaption>
+</figure>
+<figure class="field-slide" data-category="finish">
+  <a href="images/optimized/e685ffa7b9bd-1800.webp" aria-label="시공 부위 마감 사진 크게 보기"><div class="photo ">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/e685ffa7b9bd-480.webp" alt="복구 마감" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/e685ffa7b9bd-320.webp 320w, images/optimized/e685ffa7b9bd-480.webp 480w, images/optimized/e685ffa7b9bd-640.webp 640w, images/optimized/e685ffa7b9bd-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="5712">
+</div></a>
+  <figcaption><span class="field-index">복구·마감</span><strong>시공 부위 마감</strong><p class="work-description">배관 보수 후 복구 마감 기록</p></figcaption>
+</figure></div>
+<div class="field-toolbar"><p>작업 단계별 사진 슬라이드</p><div class="process-controls" hidden><button type="button" class="gallery-button" data-process-step="-1" aria-label="이전 작업 과정">←</button><button type="button" class="gallery-button" data-process-step="1" aria-label="다음 작업 과정">→</button></div></div>
+<p class="work-note">여러 현장의 사진으로 작업 단계를 소개합니다. 한 현장의 연속 촬영 사진은 아닙니다.</p></div>
+<div class="site-records" aria-labelledby="records-title">
+<div class="section-heading"><div><p class="section-number">바른배관설비 현장 사진</p><h3 id="records-title">다양한 현장에서 쌓아온 작업 기록</h3></div><button type="button" class="gallery-toggle" aria-controls="records-top records-bottom" hidden>사진 흐름 일시정지</button></div>
+<p class="records-help">두 줄로 흐르는 현장 사진입니다. 손으로 넘기거나 사진을 눌러 크게 확인하세요.</p>
+<div id="records-top" class="field-gallery flowing-gallery record-row" role="region" aria-label="현장 사진 윗줄" tabindex="0"><figure class="field-slide"><a href="images/optimized/72e385b71437-1800.webp" aria-label="현장 사진 1 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/72e385b71437-480.webp" alt="강동구 주공아파트 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/72e385b71437-320.webp 320w, images/optimized/72e385b71437-480.webp 480w, images/optimized/72e385b71437-640.webp 640w, images/optimized/72e385b71437-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
     </div>
-  </section>
-
-  <!-- Section 4: 세부 서비스 & 케어 -->
-  <section class="sec-features-grid">
-    <div class="container">
-      
-      <div class="feature-tag">바른배관설비 9가지 서비스</div>
-      <h2 class="feature-main-title">
-        상담부터 마감까지<br>
-        <span class="blue-text">바른배관설비만의 9가지 디테일</span>
-      </h2>
-      <p class="feature-sub-text">작은 차이가 완벽한 결과물의 차이를 만듭니다.</p>
-
-      <div class="feature-card-list">
-        <div class="feature-card-item">
-          <div class="feat-icon">👷‍♂️</div>
-          <div class="feat-info">
-            <h4>대표 직접 상담 · 시공</h4>
-            <p>상담부터 현장 탐지, 수리, 마감까지 다른 사람에게 넘기지 않고 대표가 책임 시공합니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">🔧</div>
-          <div class="feat-info">
-            <h4>배관 구조 전문 엔지니어</h4>
-            <p>어깨너머 배워 탐지기만 대보는 업자가 아닙니다. 배관 구조와 원리를 이해하고 정확히 수리합니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">🎯</div>
-          <div class="feat-info">
-            <h4>탐지부터 수리까지 한 번에</h4>
-            <p>다른 업체를 다시 부를 필요 없이 원인 포착부터 배관 보수까지 현장에서 당일 즉시 해결합니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">📉</div>
-          <div class="feat-info">
-            <h4>과대 공사 없는 최소 굴착</h4>
-            <p>꼭 필요한 작업만 안내해 드리며, 멀쩡한 바닥을 파헤치지 않고 최소 범위만 공사합니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">🔬</div>
-          <div class="feat-info">
-            <h4>첨단 장비 정밀 진단</h4>
-            <p>공압검사·청음탐지·가스탐지·배관내시경 장비로 보이지 않는 미세 누수까지 정밀 파악합니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">🧹</div>
-          <div class="feat-info">
-            <h4>시공 후 깔끔한 완벽 마감</h4>
-            <p>철저한 사전 보양부터 작업 후 청소, 미장/타일 마감까지 100% 만족하도록 정리합니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">📄</div>
-          <div class="feat-info">
-            <h4>일배책 보험 처리 100% 지원</h4>
-            <p>보험 청구에 필요한 현장 사진과 소견서를 약관상 인정받도록 정밀하게 작성 지원해 드립니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">🗣️</div>
-          <div class="feat-info">
-            <h4>친절하고 쉬운 현장 설명</h4>
-            <p>어디가 왜 문제이고 어떻게 공사하는지 의뢰인이 충분히 이해하도록 투명하게 설명해 드립니다.</p>
-          </div>
-        </div>
-
-        <div class="feature-card-item">
-          <div class="feat-icon">📱</div>
-          <div class="feat-info">
-            <h4>24시간 무료 상담 & 긴급 출동</h4>
-            <p>갑작스러운 야간·주말 누수 문제도 당황하지 마세요. 24시간 언제든 편하게 상담 가능합니다.</p>
-          </div>
-        </div>
-      </div>
-
+    </a><figcaption>강동구 주공아파트 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/00acafec1dd8-1800.webp" aria-label="현장 사진 1 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/00acafec1dd8-480.webp" alt="강동구 주공아파트 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/00acafec1dd8-320.webp 320w, images/optimized/00acafec1dd8-480.webp 480w, images/optimized/00acafec1dd8-640.webp 640w, images/optimized/00acafec1dd8-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
     </div>
-  </section>
-
-  <!-- Section 5: 현장 실제 사진 (슬라이더) -->
-  <section class="sec-gallery-snap">
-    <div class="container">
-      
-      <div class="gallery-tag">현장 실제 사진</div>
-      <h2 class="gallery-main-title">
-        오늘도 현장에서<br>
-        <span class="blue-text">원인을 찾고 해결합니다</span>
-      </h2>
-      <p class="gallery-sub-text">👈 손가락으로 슥- 넘겨서 실제 작업 현장을 확인해보세요.</p>
-
-      <!-- 가로 슬라이드 스와이프 컨테이너 -->
-      <div class="snap-slider-wrapper">
-        
-        <div class="snap-card">
-          <div class="snap-img-box"><img src="images/snap-01.jpg" alt="사전 보양" class="snap-real-img"></div>
-          <div class="snap-info">
-            <span class="snap-badge">사전 보양</span>
-            <span class="snap-caption">철저한 집안 오염 방지 작업</span>
-          </div>
-        </div>
-
-        <div class="snap-card">
-          <div class="snap-img-box"><img src="images/snap-02.jpg" alt="정밀 탐지" class="snap-real-img"></div>
-          <div class="snap-info">
-            <span class="snap-badge">정밀 탐지</span>
-            <span class="snap-caption">공압 & 청음 가스 정밀 점검</span>
-          </div>
-        </div>
-
-        <div class="snap-card">
-          <div class="snap-img-box"><img src="images/snap-03.jpg" alt="최소 굴착" class="snap-real-img"></div>
-          <div class="snap-info">
-            <span class="snap-badge">최소 굴착</span>
-            <span class="snap-caption">정확한 지점 최소 바닥 타격</span>
-          </div>
-        </div>
-
-        <div class="snap-card">
-          <div class="snap-img-box"><img src="images/snap-04.jpg" alt="배관 교체" class="snap-real-img"></div>
-          <div class="snap-info">
-            <span class="snap-badge">배관 교체</span>
-            <span class="snap-caption">손상 배관 보수 & 교체 시공</span>
-          </div>
-        </div>
-
-        <div class="snap-card">
-          <div class="snap-img-box"><img src="images/snap-05.jpg" alt="완벽 마감" class="snap-real-img"></div>
-          <div class="snap-info">
-            <span class="snap-badge">완벽 마감</span>
-            <span class="snap-caption">타일 & 시멘트 미장 복구</span>
-          </div>
-        </div>
-
-        <div class="snap-card">
-          <div class="snap-img-box"><img src="images/snap-06.jpg" alt="뒷정리" class="snap-real-img"></div>
-          <div class="snap-info">
-            <span class="snap-badge">뒷정리</span>
-            <span class="snap-caption">작업 완료 후 현장 청소 완료</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="slide-indicator-bar">
-        <span class="indicator-dot active"></span>
-        <span class="indicator-dot"></span>
-        <span class="indicator-dot"></span>
-      </div>
-
+    </a><figcaption>강동구 주공아파트 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/918f89acbeca-1800.webp" aria-label="현장 사진 1 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/918f89acbeca-480.webp" alt="강서구 놀이터 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/918f89acbeca-320.webp 320w, images/optimized/918f89acbeca-480.webp 480w, images/optimized/918f89acbeca-640.webp 640w, images/optimized/918f89acbeca-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
     </div>
-  </section>
-
-  <!-- Section 5.5: 현장 실제 사진 벽 -->
-  <section class="sec-snap-wall">
-    <div class="container-full">
-      <div class="wall-header">
-        <div class="gallery-tag">현장 실제 사진</div>
-        <h2 class="gallery-main-title">
-          오늘도 현장에서<br>
-          <span class="blue-text">원인을 찾고 해결합니다</span>
-        </h2>
-        <p class="gallery-sub-text">실제 작업 중 직접 촬영한 현장 라이브 스냅입니다.</p>
-      </div>
-
-      <div class="snap-wall-container">
-        
-        <!-- 윗줄 트랙 (1세트 + 2세트 연속 배치) -->
-        <div class="wall-track track-left" id="trackLeft">
-          <!-- [1세트] -->
-          <div class="wall-img-item w-narrow"><img src="images/wall-01.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-02.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-03.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-04.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-05.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-06.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-07.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-08.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-09.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-10.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-11.jpg" alt="현장스냅" class="wall-real-img"></div>
-
-          <!-- [2세트 - 무한 루프 연결용 완벽 복제] -->
-          <div class="wall-img-item w-narrow"><img src="images/wall-01.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-02.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-03.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-04.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-05.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-06.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-07.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-08.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-09.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-10.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-11.jpg" alt="현장스냅" class="wall-real-img"></div>
-        </div>
-
-        <!-- 아랫줄 트랙 (1세트 + 2세트 연속 배치) -->
-        <div class="wall-track track-right" id="trackRight">
-          <!-- [1세트] -->
-          <div class="wall-img-item w-wide"><img src="images/wall-01.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-02.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-03.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-04.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-05.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-06.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-07.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-08.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-09.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-10.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-11.jpg" alt="현장스냅" class="wall-real-img"></div>
-
-          <!-- [2세트 - 무한 루프 연결용 완벽 복제] -->
-          <div class="wall-img-item w-wide"><img src="images/wall-12.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-13.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-14.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-15.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-16.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-17.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-18.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-19.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-narrow"><img src="images/wall-20.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item w-wide"><img src="images/wall-21.jpg" alt="현장스냅" class="wall-real-img"></div>
-          <div class="wall-img-item"><img src="images/wall-22.jpg" alt="현장스냅" class="wall-real-img"></div>
-        </div>
-
-      </div>
+    </a><figcaption>강서구 놀이터 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/62557500cc6c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/62557500cc6c-480.webp" alt="아파트 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/62557500cc6c-320.webp 320w, images/optimized/62557500cc6c-480.webp 480w, images/optimized/62557500cc6c-640.webp 640w, images/optimized/62557500cc6c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
     </div>
-  </section>
-
-  <!-- Section 6: 실제 누수 해결 사례 -->
-  <section class="sec-case-study">
-    <div class="container">
-      
-      <div class="case-tag">케이스 스터디</div>
-      <h2 class="case-main-title">
-        유명 유튜브 업체 포함 7곳이 포기한<br>
-        <span class="blue-text">3년 묵은 남양주 4층 펜션 미세 누수</span>
-      </h2>
-      <p class="case-sub-text">다른 업체가 허송세월할 때, 바른배관설비가 단 하루 만에 해결한 실제 이야기입니다.</p>
-
-      <div class="case-card">
-        <!-- 상단 난이도 & 혜택 뱃지 -->
-        <div class="case-header-badge">
-          <span class="badge-red">🔥 난이도 극상</span>
-          <span class="badge-gray">3년간 5,000만 원 손실 현장</span>
-        </div>
-
-        <!-- 문제 상황 설명 + 기계실 실제 사진 추가 -->
-        <div class="case-block problem-block">
-          <h3 class="block-title">🚨 현장 상황 & 타 업체 실패 원인</h3>
-          <p class="block-desc">
-            4층 규모 심야보일러 배관이 기계실처럼 어지럽게 얽혀 있어 유명 유튜브 업체 포함 7개 업체가 다녀갔지만 모두 <strong>"원인 불명"</strong>이라며 바닥만 깨다 철수했던 절망적인 현장이었습니다.
-          </p>
-          
-          <!-- 기계실 현장 사진 박스 신설 -->
-          <div class="problem-img-box">
-            <img src="images/namyangyu.jpg" alt="남양주 펜션 실제 보일러 기계실 배관 현장" class="problem-real-img">
-            <span class="img-caption">▲ 7개 업체가 포기하고 돌아간 실제 남양주 펜션의 복잡한 보일러 기계실 현장</span>
-          </div>
-        </div>
-
-        <!-- 바른배관설비의 정밀 공학 해결책 -->
-        <div class="case-block solution-block">
-          <h3 class="block-title">💡 바른배관설비의 정밀 데이터 접근</h3>
-          <ul class="solution-list">
-            <li><strong>1. 배관 공압 정밀 분석:</strong> 미세하게 빠지는 시간당 압력 변화 속도를 데이터화</li>
-            <li><strong>2. 혼합가스 & 청음 정밀 포착:</strong> 배관 깊숙한 곳의 미세 가스 반응 지점 핀포인트 특류</li>
-            <li><strong>3. 최소 굴착 원포인트 시공:</strong> 어림잡아 깨지 않고 딱 타일 1장 크기만 최소 타격</li>
-          </ul>
-        </div>
-
-        <!-- 3단계 시공 현장 라이브 증빙 박스 -->
-        <div class="case-process-visual-box">
-          <h4 class="visual-box-title">📸 현장 핀포인트 정밀 추적 과정</h4>
-          <div class="case-visual-grid">
-            <div class="visual-step-item">
-              <div class="v-img-box">
-                <img src="images/case-01.jpg" alt="정밀 탐지 과정" class="v-img">
-              </div>
-              <span class="v-step-tag">STEP 01</span>
-              <p class="v-step-txt">어지러운 배관 속 공압·가스 정밀 포착</p>
-            </div>
-
-            <div class="visual-step-item">
-              <div class="v-img-box">
-                <img src="images/case-02.jpg" alt="최소 굴착" class="v-img">
-              </div>
-              <span class="v-step-tag">STEP 02</span>
-              <p class="v-step-txt">타일 단 1장 크기 최소 원포인트 굴착</p>
-            </div>
-
-            <div class="visual-step-item">
-              <div class="v-img-box">
-                <img src="images/case-03.jpg" alt="완벽 마감" class="v-img">
-              </div>
-              <span class="v-step-tag">STEP 03</span>
-              <p class="v-step-txt">2차 압력 검증 후 깔끔한 원상복구 마감</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 해결 결과 요약 -->
-        <div class="case-block result-block">
-          <h3 class="block-title">🎉 해결 결과 & 고객 후기</h3>
-          <p class="block-desc">
-            3년 동안 원인을 못 찾아 밤잠을 설치시던 펜션 사장님께서 단 하루 만에 원인을 단번에 잡아내자 <strong>"진작 불렀으면 생돈 5,000만 원 안 날렸을 텐데"</strong>라며 감격해하셨던 현장입니다.
-          </p>
-          <div class="result-summary-box">
-            <span>✅ 공사 소요시간: <strong>당일 5시간 완료</strong></span>
-            <span>✅ 굴착 손상 범위: <strong>타일 단 1장 (집안 손상 극소화)</strong></span>
-          </div>
-        </div>
-      </div>
-
+    </a><figcaption>아파트 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/e2388f88bcaf-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/e2388f88bcaf-480.webp" alt="양천구 공용 배관 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/e2388f88bcaf-320.webp 320w, images/optimized/e2388f88bcaf-480.webp 480w, images/optimized/e2388f88bcaf-640.webp 640w, images/optimized/e2388f88bcaf-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
     </div>
-  </section>
-
-
-  <!-- Section 7: 누수 문제의 진짜 원인 -->
-  <section class="sec-problem-solution">
-    <div class="container">
-      
-      <div class="problem-tag">누수 문제의 진짜 원인</div>
-      <h2 class="problem-main-title">
-        왜 다른 업체를 2~3곳 불러도<br>
-        <span class="blue-text">누수를 못 잡고 돈만 날렸을까요?</span>
-      </h2>
-      <p class="problem-sub-text">단순히 운이 없었던 게 아닙니다. 접근 방식부터 틀렸기 때문입니다.</p>
-
-      <div class="pain-quote-box">
-        <p class="quote-text">
-          멀쩡한 바닥 다 깨놓고 원인을 못 찾겠다며 출장비만 받아갔어요...<br>
-          수리했다고 해서 돈 줬는데, 일주일 뒤에 아래층에서 또 물이 샌대요..."
-        </p>
-      </div>
-
-      <div class="problem-card-list">
-        <div class="problem-card-item">
-          <div class="problem-card-header">
-            <span class="bad-badge">한계 01</span>
-            <span class="bad-title">기술의 한계</span>
-          </div>
-          <h3 class="problem-card-sub">비전문가의 '감' 의존 무작위 굴착</h3>
-          <p class="problem-card-desc">
-            배관의 수압 원리나 건물 구조에 대한 이해 없이, 단순히 탐지기 소리만 대강 듣고 <em>여기 같은데?</em> 하며 바닥부터 깨부수어 집안을 망쳐놓습니다.
-          </p>
-        </div>
-
-        <div class="problem-card-item">
-          <div class="problem-card-header">
-            <span class="bad-badge">한계 02</span>
-            <span class="bad-title">양심의 한계</span>
-          </div>
-          <h3 class="problem-card-sub">박리다매식 '하루 3~4곳' 돌빼기 시공</h3>
-          <p class="problem-card-desc">
-            다음 현장 시간에 쫓기다 보니 미세하게 발생하는 공압 및 가스 반응을 진득하게 측정할 시간이 없습니다. 결국 대충 눈속임 수리만 하고 철수합니다.
-          </p>
-        </div>
-
-        <div class="problem-card-item">
-          <div class="problem-card-header">
-            <span class="bad-badge">한계 03</span>
-            <span class="bad-title">책임의 한계</span>
-          </div>
-          <h3 class="problem-card-sub">A/S 요청하면 '폐업했다' 거짓말하고 잠적</h3>
-          <p class="problem-card-desc">
-            공사 후 동일 부위에서 재발해 연락하면 <em>"저희 폐업했습니다"</em> 거짓말하거나 연락을 피하는 비양심 업자들이 너무나 많습니다.
-          </p>
-        </div>
-      </div>
-
-      <div class="solution-bridge-box">
-        <div class="bridge-tag">바른배관설비 철학</div>
-        <h3 class="bridge-title">
-          누수는 '노가다'가 아니라<br>
-          <span class="blue-text">정밀 공학입니다</span>
-        </h3>
-        <p class="bridge-desc">
-          바른배관설비는 어설픈 직관이나 감에 의존하지 않습니다.<br>
-          <strong>공압·혼합가스·청음 3중 데이터</strong>가 100% 일치하는 정밀 지점만 최소 굴착하여 단번에 해결합니다.
-        </p>
-      </div>
-
+    </a><figcaption>양천구 공용 배관 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/d68ebec79c3d-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/d68ebec79c3d-480.webp" alt="유가 3중 방수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/d68ebec79c3d-320.webp 320w, images/optimized/d68ebec79c3d-480.webp 480w, images/optimized/d68ebec79c3d-640.webp 640w, images/optimized/d68ebec79c3d-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
     </div>
-  </section>
-
-  <!-- Section 8: 정밀 진단 및 시공 과정 -->
-  <section class="sec-process-system">
-    <div class="container">
-      
-      <div class="process-tag">정밀 진단 및 시공 과정</div>
-      <h2 class="process-main-title">
-        하청/하도급 0%!<br>
-        <span class="blue-text">대표가 직접 현장에서 책임 시공합니다</span>
-      </h2>
-      <p class="process-sub-text">공압, 가스, 청음, 내시경까지 현장에 맞는 최적의 방법으로 정밀하게 진단합니다.</p>
-
-      <div class="engineer-trust-card">
-        <div class="trust-badge-row">
-          <span class="trust-badge">100% 대표 직접 시공</span>
-          <span class="trust-badge-gold">현장 맞춤 정밀 진단</span>
-        </div>
-        <h3 class="trust-card-title">어떤 난이도의 누수도 포기하지 않는 이유</h3>
-        <p class="trust-card-desc">
-          현장마다 배관의 종류와 건물의 구조, 누수의 원인은 완전히 다릅니다.<br>
-          바른배관설비는 <strong>단 한 가지 장비에 의존하지 않고</strong>, 오랜 현장 경험을 바탕으로 공압·가스·청음·배관내시경 등 모든 진단 노하우를 총동원하여 핀포인트로 원인을 찾아냅니다.
-        </p>
-      </div>
-
-      <div class="process-timeline">
-        <div class="process-step-item">
-          <div class="step-num-badge">1단계</div>
-          <div class="step-content">
-            <h3 class="step-title">24시 대표 직접 상담 & 긴급 대처 안내</h3>
-            <p class="step-desc">상담원이나 외주업체가 아닌 <strong>대표 엔지니어가 직접 전화/카톡 상담</strong>을 진행하며, 방문 전 피해를 줄이기 위한 긴급 조치를 안내해 드립니다.</p>
-          </div>
-        </div>
-
-        <div class="process-step-item">
-          <div class="step-num-badge">2단계</div>
-          <div class="step-content">
-            <h3 class="step-title">현장 방문 & 100% 철저한 사전 보양</h3>
-            <p class="step-desc">공사 중 발생하는 먼지, 분진, 오염으로부터 고객님의 공간을 완벽히 보호하기 위해 가구와 바닥에 전용 보양재 작업을 가장 먼저 실시합니다.</p>
-          </div>
-        </div>
-
-        <div class="process-step-item">
-          <div class="step-num-badge">3단계</div>
-          <div class="step-content">
-            <h3 class="step-title">다각도 정밀 진단 (공압·가스·청음·내시경)</h3>
-            <p class="step-desc"><strong>[배관 공압 검사]</strong>로 누수관을 특정하고, <strong>[혼합 가스 탐지]</strong> 및 <strong>[초정밀 청음 탐지]</strong>로 위치를 잡아내며, 필요 시 <strong>[배관 내시경]</strong>으로 배관 내부까지 확인합니다.</p>
-          </div>
-        </div>
-
-        <div class="process-step-item">
-          <div class="step-num-badge">4단계</div>
-          <div class="step-content">
-            <h3 class="step-title">원포인트 최소 굴착 & 완벽 배관 교체/수리</h3>
-            <p class="step-desc">대표가 직접 파악한 정밀 데이터 지점만 타일 1~2장 크기로 최소 굴착하여, 집안 손상을 극소화하고 KS 인증 정품 자재로 단단하게 보수합니다.</p>
-          </div>
-        </div>
-
-        <div class="process-step-item">
-          <div class="step-num-badge">5단계</div>
-          <div class="step-content">
-            <h3 class="step-title">2차 압력 재검증, 깔끔 마감 & 원상복구</h3>
-            <p class="step-desc">수리 후 2차 공압 검사로 재누수 여부를 100% 재확인한 뒤, 기존 인테리어와 어울리도록 깔끔하게 타일/미장 마감하고 현장을 청소합니다.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="equipment-info-box">
-        <h3 class="equip-title">🔬 바른배관설비의 정밀 탐지 장비 라인업</h3>
-        <p class="equip-desc">대표 엔지니어가 직접 다루는 첨단 진단 장비입니다.</p>
-        <div class="equip-tags-grid">
-          <span class="equip-badge">디지털 공압 측정기</span>
-          <span class="equip-badge">초정밀 혼합가스 탐지기</span>
-          <span class="equip-badge">고성능 청음 탐지기</span>
-          <span class="equip-badge">초소형 배관 내시경</span>
-          <span class="equip-badge">고성능 관로탐지기</span>
-        </div>
-      </div>
-
+    </a><figcaption>유가 3중 방수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/8cafbb125baf-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/8cafbb125baf-480.webp" alt="의정부 노후 주택 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/8cafbb125baf-320.webp 320w, images/optimized/8cafbb125baf-480.webp 480w, images/optimized/8cafbb125baf-640.webp 640w, images/optimized/8cafbb125baf-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
     </div>
-  </section>
+    </a><figcaption>의정부 노후 주택 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/1fd634101a68-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/1fd634101a68-480.webp" alt="의정부 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/1fd634101a68-320.webp 320w, images/optimized/1fd634101a68-480.webp 480w, images/optimized/1fd634101a68-640.webp 640w, images/optimized/1fd634101a68-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>의정부 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/ce3ac83704ae-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/ce3ac83704ae-480.webp" alt="의정부 옥외 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/ce3ac83704ae-320.webp 320w, images/optimized/ce3ac83704ae-480.webp 480w, images/optimized/ce3ac83704ae-640.webp 640w, images/optimized/ce3ac83704ae-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>의정부 옥외 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/1b075bd1046e-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/1b075bd1046e-480.webp" alt="이중배관 직수 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/1b075bd1046e-320.webp 320w, images/optimized/1b075bd1046e-480.webp 480w, images/optimized/1b075bd1046e-640.webp 640w, images/optimized/1b075bd1046e-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>이중배관 직수 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/4eb0e2a20c7e-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/4eb0e2a20c7e-480.webp" alt="일산 수도 누수보수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/4eb0e2a20c7e-320.webp 320w, images/optimized/4eb0e2a20c7e-480.webp 480w, images/optimized/4eb0e2a20c7e-640.webp 640w, images/optimized/4eb0e2a20c7e-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>일산 수도 누수보수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/3d48efff11fa-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/3d48efff11fa-480.webp" alt="일산 펜션 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/3d48efff11fa-320.webp 320w, images/optimized/3d48efff11fa-480.webp 480w, images/optimized/3d48efff11fa-640.webp 640w, images/optimized/3d48efff11fa-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>일산 펜션 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/2ba1bc87b0ea-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/2ba1bc87b0ea-480.webp" alt="작업차량 세팅" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/2ba1bc87b0ea-320.webp 320w, images/optimized/2ba1bc87b0ea-480.webp 480w, images/optimized/2ba1bc87b0ea-640.webp 640w, images/optimized/2ba1bc87b0ea-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>작업차량 세팅</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/474a970d1711-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/474a970d1711-480.webp" alt="종로구 상가 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/474a970d1711-320.webp 320w, images/optimized/474a970d1711-480.webp 480w, images/optimized/474a970d1711-640.webp 620w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="620" height="827">
+    </div>
+    </a><figcaption>종로구 상가 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/b7cb0cdff6cc-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/b7cb0cdff6cc-480.webp" alt="중계동 아파트 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/b7cb0cdff6cc-320.webp 320w, images/optimized/b7cb0cdff6cc-480.webp 480w, images/optimized/b7cb0cdff6cc-640.webp 640w, images/optimized/b7cb0cdff6cc-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>중계동 아파트 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/5b7da7ffc66c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/5b7da7ffc66c-480.webp" alt="중랑구 빌라 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/5b7da7ffc66c-320.webp 320w, images/optimized/5b7da7ffc66c-480.webp 480w, images/optimized/5b7da7ffc66c-640.webp 640w, images/optimized/5b7da7ffc66c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>중랑구 빌라 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/fce5fbe3f4cf-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/fce5fbe3f4cf-480.webp" alt="창신동 수도 내시경 검사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/fce5fbe3f4cf-320.webp 320w, images/optimized/fce5fbe3f4cf-480.webp 480w, images/optimized/fce5fbe3f4cf-640.webp 640w, images/optimized/fce5fbe3f4cf-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>창신동 수도 내시경 검사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/e99e020338f0-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/e99e020338f0-480.webp" alt="행당동 난방 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/e99e020338f0-320.webp 320w, images/optimized/e99e020338f0-480.webp 480w, images/optimized/e99e020338f0-640.webp 640w, images/optimized/e99e020338f0-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>행당동 난방 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/4cfe374dd473-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/4cfe374dd473-480.webp" alt="행당동 온수 내시경검사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/4cfe374dd473-320.webp 320w, images/optimized/4cfe374dd473-480.webp 480w, images/optimized/4cfe374dd473-640.webp 640w, images/optimized/4cfe374dd473-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>행당동 온수 내시경검사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/712baf4a92d6-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/712baf4a92d6-480.webp" alt="건설현장 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/712baf4a92d6-320.webp 320w, images/optimized/712baf4a92d6-480.webp 480w, images/optimized/712baf4a92d6-640.webp 640w, images/optimized/712baf4a92d6-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>건설현장 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/b63e67369248-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/b63e67369248-480.webp" alt="광진구 중앙난방 부속 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/b63e67369248-320.webp 320w, images/optimized/b63e67369248-480.webp 480w, images/optimized/b63e67369248-640.webp 640w, images/optimized/b63e67369248-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>광진구 중앙난방 부속 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/030c6da9c560-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/030c6da9c560-480.webp" alt="김포 펜션 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/030c6da9c560-320.webp 320w, images/optimized/030c6da9c560-480.webp 480w, images/optimized/030c6da9c560-640.webp 640w, images/optimized/030c6da9c560-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>김포 펜션 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/5fe3aebf1258-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/5fe3aebf1258-480.webp" alt="남양주 공장 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/5fe3aebf1258-320.webp 320w, images/optimized/5fe3aebf1258-480.webp 480w, images/optimized/5fe3aebf1258-640.webp 640w, images/optimized/5fe3aebf1258-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>남양주 공장 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/780ebdc668e3-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/780ebdc668e3-480.webp" alt="남양주 비닐공장 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/780ebdc668e3-320.webp 320w, images/optimized/780ebdc668e3-480.webp 480w, images/optimized/780ebdc668e3-640.webp 640w, images/optimized/780ebdc668e3-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>남양주 비닐공장 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/6fee8645d452-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/6fee8645d452-480.webp" alt="도봉구 공용상가 화장실 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/6fee8645d452-320.webp 320w, images/optimized/6fee8645d452-480.webp 480w, images/optimized/6fee8645d452-640.webp 640w, images/optimized/6fee8645d452-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>도봉구 공용상가 화장실 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/b3d9e5ac5910-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/b3d9e5ac5910-480.webp" alt="동대문 빌라 온수 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/b3d9e5ac5910-320.webp 320w, images/optimized/b3d9e5ac5910-480.webp 480w, images/optimized/b3d9e5ac5910-640.webp 640w, images/optimized/b3d9e5ac5910-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>동대문 빌라 온수 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/5810d5c047f9-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/5810d5c047f9-480.webp" alt="동장구 빌라 온수 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/5810d5c047f9-320.webp 320w, images/optimized/5810d5c047f9-480.webp 480w, images/optimized/5810d5c047f9-640.webp 640w, images/optimized/5810d5c047f9-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>동장구 빌라 온수 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/7c1f24c65716-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/7c1f24c65716-480.webp" alt="면목동 아파트 누수 공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/7c1f24c65716-320.webp 320w, images/optimized/7c1f24c65716-480.webp 480w, images/optimized/7c1f24c65716-640.webp 640w, images/optimized/7c1f24c65716-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>면목동 아파트 누수 공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/40eacf3086d5-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/40eacf3086d5-480.webp" alt="미아동 배관 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/40eacf3086d5-320.webp 320w, images/optimized/40eacf3086d5-480.webp 480w, images/optimized/40eacf3086d5-640.webp 640w, images/optimized/40eacf3086d5-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>미아동 배관 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/68f8981da49d-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/68f8981da49d-480.webp" alt="미아동 유가 3중 방수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/68f8981da49d-320.webp 320w, images/optimized/68f8981da49d-480.webp 480w, images/optimized/68f8981da49d-640.webp 640w, images/optimized/68f8981da49d-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>미아동 유가 3중 방수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/9a06c6e853fa-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/9a06c6e853fa-480.webp" alt="상계동 빌라 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/9a06c6e853fa-320.webp 320w, images/optimized/9a06c6e853fa-480.webp 480w, images/optimized/9a06c6e853fa-640.webp 640w, images/optimized/9a06c6e853fa-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>상계동 빌라 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/89b62430f519-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/89b62430f519-480.webp" alt="성남 노후 주택 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/89b62430f519-320.webp 320w, images/optimized/89b62430f519-480.webp 480w, images/optimized/89b62430f519-640.webp 640w, images/optimized/89b62430f519-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>성남 노후 주택 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/9d24643ab9c8-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/9d24643ab9c8-480.webp" alt="성동구 아파트 옥외 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/9d24643ab9c8-320.webp 320w, images/optimized/9d24643ab9c8-480.webp 480w, images/optimized/9d24643ab9c8-640.webp 640w, images/optimized/9d24643ab9c8-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>성동구 아파트 옥외 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/163210ce1686-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/163210ce1686-480.webp" alt="성북구 노후 다세대 주택 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/163210ce1686-320.webp 320w, images/optimized/163210ce1686-480.webp 480w, images/optimized/163210ce1686-640.webp 640w, images/optimized/163210ce1686-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>성북구 노후 다세대 주택 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/554913ac8838-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/554913ac8838-480.webp" alt="수서역 만남의 광장 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/554913ac8838-320.webp 320w, images/optimized/554913ac8838-480.webp 480w, images/optimized/554913ac8838-640.webp 640w, images/optimized/554913ac8838-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>수서역 만남의 광장 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/84080a6384f6-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/84080a6384f6-480.webp" alt="신창동 pb배관 누수 지점" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/84080a6384f6-320.webp 320w, images/optimized/84080a6384f6-480.webp 480w, images/optimized/84080a6384f6-640.webp 640w, images/optimized/84080a6384f6-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>신창동 pb배관 누수 지점</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/f22d3b0969be-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/f22d3b0969be-480.webp" alt="쌍문동 오피스텔 공용배관 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/f22d3b0969be-320.webp 320w, images/optimized/f22d3b0969be-480.webp 480w, images/optimized/f22d3b0969be-640.webp 640w, images/optimized/f22d3b0969be-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>쌍문동 오피스텔 공용배관 누수탐지</figcaption></figure></div><div id="records-bottom" class="field-gallery flowing-gallery record-row" role="region" aria-label="현장 사진 아랫줄" tabindex="0"><figure class="field-slide"><a href="images/optimized/d585cc01ddb0-1800.webp" aria-label="현장 사진 1 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/d585cc01ddb0-480.webp" alt="강남구 아파트 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/d585cc01ddb0-320.webp 320w, images/optimized/d585cc01ddb0-480.webp 480w, images/optimized/d585cc01ddb0-640.webp 640w, images/optimized/d585cc01ddb0-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>강남구 아파트 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/e75651eae09b-1800.webp" aria-label="현장 사진 1 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/e75651eae09b-480.webp" alt="강북구 물난리 빌라" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/e75651eae09b-320.webp 320w, images/optimized/e75651eae09b-480.webp 480w, images/optimized/e75651eae09b-640.webp 640w, images/optimized/e75651eae09b-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="4284">
+    </div>
+    </a><figcaption>강북구 물난리 빌라</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/712baf4a92d6-1800.webp" aria-label="현장 사진 1 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/712baf4a92d6-480.webp" alt="건설현장 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/712baf4a92d6-320.webp 320w, images/optimized/712baf4a92d6-480.webp 480w, images/optimized/712baf4a92d6-640.webp 640w, images/optimized/712baf4a92d6-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>중랑구 건설현장 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/2ad1a574b9fc-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/2ad1a574b9fc-480.webp" alt="아파트 퇴수 밸브 누수 수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/2ad1a574b9fc-320.webp 320w, images/optimized/2ad1a574b9fc-480.webp 480w, images/optimized/2ad1a574b9fc-640.webp 640w, images/optimized/2ad1a574b9fc-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>아파트 퇴수 밸브 누수 수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/03ae01d63655-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/03ae01d63655-480.webp" alt="월계동 욕조 점검구 누수 수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/03ae01d63655-320.webp 320w, images/optimized/03ae01d63655-480.webp 480w, images/optimized/03ae01d63655-640.webp 640w, images/optimized/03ae01d63655-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>월계동 욕조 점검구 누수 수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/e9820b322ebb-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/e9820b322ebb-480.webp" alt="의정부 공장 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/e9820b322ebb-320.webp 320w, images/optimized/e9820b322ebb-480.webp 480w, images/optimized/e9820b322ebb-640.webp 640w, images/optimized/e9820b322ebb-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>의정부 공장 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/b763d7e30588-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/b763d7e30588-480.webp" alt="의정부 누수 배관 보수 " loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/b763d7e30588-320.webp 320w, images/optimized/b763d7e30588-480.webp 480w, images/optimized/b763d7e30588-640.webp 640w, images/optimized/b763d7e30588-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>의정부 누수 배관 보수 </figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/837edefae669-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/837edefae669-480.webp" alt="의정부 빌라 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/837edefae669-320.webp 320w, images/optimized/837edefae669-480.webp 480w, images/optimized/837edefae669-640.webp 640w, images/optimized/837edefae669-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>의정부 빌라 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/4c0453a1f71c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/4c0453a1f71c-480.webp" alt="의정부 옥외 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/4c0453a1f71c-320.webp 320w, images/optimized/4c0453a1f71c-480.webp 480w, images/optimized/4c0453a1f71c-640.webp 640w, images/optimized/4c0453a1f71c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>의정부 옥외 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/b8710412f974-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/b8710412f974-480.webp" alt="일산 공장 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/b8710412f974-320.webp 320w, images/optimized/b8710412f974-480.webp 480w, images/optimized/b8710412f974-640.webp 640w, images/optimized/b8710412f974-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>일산 공장 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/5942072f7d87-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/5942072f7d87-480.webp" alt="일산 주택 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/5942072f7d87-320.webp 320w, images/optimized/5942072f7d87-480.webp 480w, images/optimized/5942072f7d87-640.webp 640w, images/optimized/5942072f7d87-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>일산 주택 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/7c905d011897-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/7c905d011897-480.webp" alt="자이 아파트 관망 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/7c905d011897-320.webp 320w, images/optimized/7c905d011897-480.webp 480w, images/optimized/7c905d011897-640.webp 640w, images/optimized/7c905d011897-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>자이 아파트 관망 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/c25477aacf1c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/c25477aacf1c-480.webp" alt="종로 오피스텔 공용배관 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/c25477aacf1c-320.webp 320w, images/optimized/c25477aacf1c-480.webp 480w, images/optimized/c25477aacf1c-640.webp 640w, images/optimized/c25477aacf1c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="2252" height="4000">
+    </div>
+    </a><figcaption>종로 오피스텔 공용배관 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/2d2bf6a2192f-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/2d2bf6a2192f-480.webp" alt="중계동 누수공사 마감" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/2d2bf6a2192f-320.webp 320w, images/optimized/2d2bf6a2192f-480.webp 480w, images/optimized/2d2bf6a2192f-640.webp 640w, images/optimized/2d2bf6a2192f-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>중계동 누수공사 마감</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/2d60028f5955-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/2d60028f5955-480.webp" alt="중랑구 빌라 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/2d60028f5955-320.webp 320w, images/optimized/2d60028f5955-480.webp 480w, images/optimized/2d60028f5955-640.webp 640w, images/optimized/2d60028f5955-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="2252" height="4000">
+    </div>
+    </a><figcaption>중랑구 빌라 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/ae7158c817b8-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/ae7158c817b8-480.webp" alt="지역난방 메인수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/ae7158c817b8-320.webp 320w, images/optimized/ae7158c817b8-480.webp 480w, images/optimized/ae7158c817b8-640.webp 640w, images/optimized/ae7158c817b8-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>지역난방 메인수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/8144215a8f16-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/8144215a8f16-480.webp" alt="커피숍 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/8144215a8f16-320.webp 320w, images/optimized/8144215a8f16-480.webp 480w, images/optimized/8144215a8f16-640.webp 640w, images/optimized/8144215a8f16-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>커피숍 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/dade249b7c2c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/dade249b7c2c-480.webp" alt="행당동 동사무소 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/dade249b7c2c-320.webp 320w, images/optimized/dade249b7c2c-480.webp 480w, images/optimized/dade249b7c2c-640.webp 640w, images/optimized/dade249b7c2c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>행당동 동사무소 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/9f9d7d339e2c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/9f9d7d339e2c-480.webp" alt="행당동 온수 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/9f9d7d339e2c-320.webp 320w, images/optimized/9f9d7d339e2c-480.webp 480w, images/optimized/9f9d7d339e2c-640.webp 640w, images/optimized/9f9d7d339e2c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>행당동 온수 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/1125451fecc5-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/1125451fecc5-480.webp" alt="경기도 광주 공장 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/1125451fecc5-320.webp 320w, images/optimized/1125451fecc5-480.webp 480w, images/optimized/1125451fecc5-640.webp 640w, images/optimized/1125451fecc5-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>경기도 광주 공장 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/6aa7b700b5a5-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/6aa7b700b5a5-480.webp" alt="기계실 펌프 반복적 가동 원인해결" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/6aa7b700b5a5-320.webp 320w, images/optimized/6aa7b700b5a5-480.webp 480w, images/optimized/6aa7b700b5a5-640.webp 640w, images/optimized/6aa7b700b5a5-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>기계실 펌프 반복적 가동 원인해결</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/c2999bb8deb2-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/c2999bb8deb2-480.webp" alt="김포공장 대곶면 공장 누수" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/c2999bb8deb2-320.webp 320w, images/optimized/c2999bb8deb2-480.webp 480w, images/optimized/c2999bb8deb2-640.webp 640w, images/optimized/c2999bb8deb2-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>김포공장 대곶면 공장 누수</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/88004b72a774-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/88004b72a774-480.webp" alt="남양주 공장 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/88004b72a774-320.webp 320w, images/optimized/88004b72a774-480.webp 480w, images/optimized/88004b72a774-640.webp 640w, images/optimized/88004b72a774-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>남양주 공장 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/8bdf53157b48-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/8bdf53157b48-480.webp" alt="노원구 아파트 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/8bdf53157b48-320.webp 320w, images/optimized/8bdf53157b48-480.webp 480w, images/optimized/8bdf53157b48-640.webp 640w, images/optimized/8bdf53157b48-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>노원구 아파트 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/0f45c4117ca3-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/0f45c4117ca3-480.webp" alt="도봉구 주택 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/0f45c4117ca3-320.webp 320w, images/optimized/0f45c4117ca3-480.webp 480w, images/optimized/0f45c4117ca3-640.webp 640w, images/optimized/0f45c4117ca3-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>도봉구 주택 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/7de7021bea61-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/7de7021bea61-480.webp" alt="동대문구 이중배관 아파트 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/7de7021bea61-320.webp 320w, images/optimized/7de7021bea61-480.webp 480w, images/optimized/7de7021bea61-640.webp 640w, images/optimized/7de7021bea61-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>동대문구 이중배관 아파트 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/21c4b8054cf1-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/21c4b8054cf1-480.webp" alt="면목동 빌라 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/21c4b8054cf1-320.webp 320w, images/optimized/21c4b8054cf1-480.webp 480w, images/optimized/21c4b8054cf1-640.webp 640w, images/optimized/21c4b8054cf1-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>면목동 빌라 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/f3a9e906579b-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/f3a9e906579b-480.webp" alt="명일동 냉수 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/f3a9e906579b-320.webp 320w, images/optimized/f3a9e906579b-480.webp 480w, images/optimized/f3a9e906579b-640.webp 640w, images/optimized/f3a9e906579b-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>명일동 냉수 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/a5fe220f277a-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/a5fe220f277a-480.webp" alt="미아동 빌라 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/a5fe220f277a-320.webp 320w, images/optimized/a5fe220f277a-480.webp 480w, images/optimized/a5fe220f277a-640.webp 640w, images/optimized/a5fe220f277a-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>미아동 빌라 누수공사</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/b5d4bd777e92-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/b5d4bd777e92-480.webp" alt="삼양동 물난리 빌라 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/b5d4bd777e92-320.webp 320w, images/optimized/b5d4bd777e92-480.webp 480w, images/optimized/b5d4bd777e92-640.webp 640w, images/optimized/b5d4bd777e92-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="4284">
+    </div>
+    </a><figcaption>삼양동 물난리 빌라 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/1cce5571c489-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/1cce5571c489-480.webp" alt="상봉동 아파트 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/1cce5571c489-320.webp 320w, images/optimized/1cce5571c489-480.webp 480w, images/optimized/1cce5571c489-640.webp 640w, images/optimized/1cce5571c489-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="2252" height="4000">
+    </div>
+    </a><figcaption>상봉동 아파트 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/7bfdd775e7de-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/7bfdd775e7de-480.webp" alt="성남 원룸텔 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/7bfdd775e7de-320.webp 320w, images/optimized/7bfdd775e7de-480.webp 480w, images/optimized/7bfdd775e7de-640.webp 640w, images/optimized/7bfdd775e7de-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>성남 원룸텔 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/c058930919d7-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/c058930919d7-480.webp" alt="성동구 중앙난방 퇴수 작업" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/c058930919d7-320.webp 320w, images/optimized/c058930919d7-480.webp 480w, images/optimized/c058930919d7-640.webp 640w, images/optimized/c058930919d7-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>성동구 중앙난방 퇴수 작업</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/38c5b681309c-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/38c5b681309c-480.webp" alt="성북동 누수수리" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/38c5b681309c-320.webp 320w, images/optimized/38c5b681309c-480.webp 480w, images/optimized/38c5b681309c-640.webp 640w, images/optimized/38c5b681309c-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="4284" height="5712">
+    </div>
+    </a><figcaption>성북동 누수수리</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/e3e48d2964da-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/e3e48d2964da-480.webp" alt="신림동 원룸텔 누수탐지" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/e3e48d2964da-320.webp 320w, images/optimized/e3e48d2964da-480.webp 480w, images/optimized/e3e48d2964da-640.webp 640w, images/optimized/e3e48d2964da-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3024" height="4032">
+    </div>
+    </a><figcaption>신림동 원룸텔 누수탐지</figcaption></figure>
+<figure class="field-slide"><a href="images/optimized/775cd1722ebe-1800.webp" aria-label="현장 사진 크게 보기">
+    <div class="photo ">
+      <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+      <img src="images/optimized/775cd1722ebe-480.webp" alt="쌍문동 빌라 누수공사" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/775cd1722ebe-320.webp 320w, images/optimized/775cd1722ebe-480.webp 480w, images/optimized/775cd1722ebe-640.webp 640w, images/optimized/775cd1722ebe-960.webp 960w" sizes="auto, (max-width: 600px) calc(62vw - 30px), 260px" width="3000" height="4000">
+    </div>
+    </a><figcaption>쌍문동 빌라 누수공사</figcaption></figure></div>
+</div></div></section>
 
-  <!-- Section 9: 투명 가격 정찰제 & 일배책 보험 -->
-  <section class="sec-insurance-faq">
-    <div class="container">
-      
-      <!-- 정찰제 가격 안내 카드 -->
-      <div class="price-guide-card">
-        <div class="price-tag">투명한 가격정찰제</div>
-        <h2 class="price-title">
-          현장에서 말 바꾸는 <br>고무줄 바가지 견적 NO!<br>
-          <span class="blue-text">바른배관설비 투명 가격정찰제</span>
-        </h2>
-        <p class="price-desc">
-          전화상 저단가 낚시 후 현장에서 수백만 원을 부르는 비양심 행태를 거부합니다.<br>
-          바른배관설비는 정직한 정찰제 단가표에 따라 투명하게 안내해 드립니다.
-        </p>
-
-        <!-- ★ 핵심 마케팅 장치: 보험 쿠션 안심 배너 (가격 저항 해소) -->
-        <div class="insurance-cushion-banner">
-          <div class="cushion-badge">💰 공사비 부담 완화 팁</div>
-          <h3 class="cushion-title">일배책 보험 활용 시 자부담금 <br>10원~50만 원대 해결 가능!</h3>
-          <p class="cushion-desc">
-            가입하신 실비·화재·운전자 보험의 <strong>[일상생활배상책임 특약]</strong>이 있다면 우리 집 누수 공사비 및 아래층 피해 복구비까지 보험으로 대폭 절감하실 수 있습니다.
-          </p>
-        </div>
-
-        <!-- 1. 무료 서비스 항목 -->
-        <div class="price-free-card">
-          <div class="price-header">
-            <span class="free-badge">무료 서비스 항목</span>
-            <h4>기본 점검 & 서류 발급 비용 (0원)</h4>
+    <section class="section price-section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container price-layout">
+        <div class="price-intro">
+          <p class="section-number">02 / 비용 안내</p>
+          <h2 id="pricing-title">어떤 작업에<br>비용이 드는지부터.</h2>
+          <p>아래 금액은 <strong>일반 세대 기준의 공정별 단가</strong>입니다.<br>필요한 탐지·수리·마감 범위를 확인한 후 전체 견적을 안내합니다.</p>
+          <div class="price-note">
+            <strong>원인 미해결 시 0원 원칙</strong>
+            <p>원인을 찾지 못해 누수를 해결하지 못한 경우 출장비·공압 검사비·탐지비를 받지 않습니다.</p>
           </div>
-          <div class="price-body">
-            <ul class="price-detail-list">
-              <li><span>계량기 누수 정밀 검사</span> <strong class="blue-zero">0원</strong></li>
-              <li><span>보험 제출용 정밀 소견서 발급</span> <strong class="blue-zero">0원</strong></li>
-              <li><span>현장 증빙용 고화질 사진 세트</span> <strong class="blue-zero">0원</strong></li>
-              <li><span>공사 견적서 발행</span> <strong class="blue-zero">0원</strong></li>
-            </ul>
-          </div>
+          <p class="price-terms">건물 유형과 작업 범위에 따라 견적이 달라질 수 있습니다. 정확한 비용은 현장 확인 후 안내합니다.</p>
         </div>
-
-        <!-- 2. 기본 공정별 정찰제 단가 목록 -->
-        <div class="price-grid">
-          <div class="price-item">
-            <div class="price-header">
-              <span class="price-step">1단계</span>
-              <h4>정밀 진단 & 탐지</h4>
-            </div>
-            <div class="price-body">
-              <ul class="price-detail-list">
+        <div>
+          <div class="price-list">
+            <details open>
+<summary>정밀 진단 & 탐지</summary>
+<ul class="prices">
                 <li><span>배관 공압 검사 (개별세대)</span> <strong>10만 원</strong></li>
                 <li><span>지역/중앙난방 배관 공압 검사</span> <strong>20만 원</strong></li>
                 <li><span>누수 지점 정밀 탐지 (비굴착)</span> <strong>40만 원</strong></li>
               </ul>
-            </div>
-          </div>
-
-          <div class="price-item">
-            <div class="price-header">
-              <span class="price-step">2단계</span>
-              <h4>최소 굴착 & 배관 수리</h4>
-            </div>
-            <div class="price-body">
-              <ul class="price-detail-list">
+</details>
+<details>
+<summary>최소 굴착 & 배관 수리</summary>
+<ul class="prices">
                 <li><span>원포인트 최소 굴착 공사</span> <strong>40만 원</strong></li>
                 <li><span>배관 수리 및 보수 설비</span> <strong>20만 원</strong></li>
                 <li><span>배관 역류 막힘 스케일링</span> <strong>30만 원</strong></li>
               </ul>
-            </div>
-          </div>
-
-          <div class="price-item">
-            <div class="price-header">
-              <span class="price-step bg-waterproof">방수 옵션</span>
-              <h4>방수 시공 옵션</h4>
-            </div>
-            <div class="price-body">
-              <ul class="price-detail-list">
+</details>
+<details>
+<summary>방수 시공 옵션</summary>
+<ul class="prices">
                 <li><span>침투 방수 (균열 본드 + 줄눈 메지)</span> <strong>50만 원</strong></li>
                 <li><span>하수관 실링 및 보수 작업</span> <strong>30만 원</strong></li>
                 <li><span>유가 재설치 방수</span> <strong>30만 원</strong></li>
@@ -923,208 +677,137 @@
                 <li><span>우수관 주변 방수 (비굴착)</span> <strong>30만 원</strong></li>
                 <li><span>우수관 방수 (굴착/교체)</span> <strong>80만 원</strong></li>
               </ul>
-            </div>
-          </div>
-
-          <div class="price-item">
-            <div class="price-header">
-              <span class="price-step">3단계</span>
-              <h4>책임 복구 마감</h4>
-            </div>
-            <div class="price-body">
-              <ul class="price-detail-list">
+</details>
+<details>
+<summary>책임 복구 마감</summary>
+<ul class="prices">
                 <li><span>미장 마감 (시멘트 원상복구)</span> <strong>10만 원</strong></li>
                 <li><span>타일 마감</span> <strong>30만 원</strong></li>
                 <li><span>마루 마감</span> <strong>자체 20만 / 외주 40만</strong></li>
                 <li><span>대리석 마감</span> <strong>별도협의</strong></li>
               </ul>
-            </div>
+</details>
+            <details>
+              <summary>무료 점검·서류 발급 안내</summary>
+              <ul class="simple-list">
+                <li>계량기 누수 검사</li><li>보험 제출용 누수 소견서</li><li>현장 증빙 사진</li><li>공사 견적서</li>
+              </ul>
+              <p>보험 청구에 필요한 서류 발급을 지원합니다. 보상 여부와 자기부담금은 가입한 보험의 약관과 보험사 심사에 따라 달라집니다.</p>
+            </details>
           </div>
         </div>
-
-        <!-- 3. 건물 유형별 할증 적용 기준 -->
-        <div class="building-type-box">
-          <h4 class="building-title">🏢 현장 유형별 투명 적용 기준</h4>
-          <p class="building-sub">건물 구조와 배관 범위에 따른 기준입니다.</p>
-          <div class="building-grid">
-            <div class="b-type-item">
-              <span class="b-name">일반 세대 실내 누수</span>
-              <span class="b-rate blue-rate">정찰가 그대로 (1.0배)</span>
-            </div>
-            <div class="b-type-item">
-              <span class="b-name">계량기 없는 다가구 주택</span>
-              <span class="b-rate">1.5배</span>
-            </div>
-            <div class="b-type-item">
-              <span class="b-name">아파트 / 다세대 공용부 누수</span>
-              <span class="b-rate">1.5배</span>
-            </div>
-            <div class="b-type-item">
-              <span class="b-name">상가 / 음식점 / 원룸텔</span>
-              <span class="b-rate">1.5배 ~</span>
-            </div>
-            <div class="b-type-item">
-              <span class="b-name">공장 / 옥외누수</span>
-              <span class="b-rate">1.5배 ~</span>
-            </div>
-          </div>
-        </div>
-
       </div>
+    </section>
 
-      <!-- 일상생활배상책임보험 밀착케어 카드 -->
-      <div class="insurance-card">
-        <div class="insurance-tag">보험 케어</div>
-        <h2 class="insurance-title">
-          어렵고 복잡한 누수 보험 청구,<br>
-          <span class="blue-text">바른배관설비가 서류까지 세밀하게 무료 작성해 드립니다</span>
-        </h2>
-        <p class="insurance-desc">
-          현장 사진 증빙과 누수 정밀 소견서를 보험 약관 기준에 맞추어 꼼꼼하게 지원합니다.
-        </p>
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-number">03 / 진행 절차</p><h2 id="process-title">처음 겪는 누수여도,<br>과정은 알 수 있도록.</h2></div>
+        </div>
+        <ol class="process-grid">
+          <li><h3>증상 상담</h3><p>지역과 건물 유형, 누수 증상을 듣고 방문 일정을 안내합니다.</p></li>
+          <li><h3>탐지·견적 안내</h3><p>배관 구조와 검사 반응을 확인하고 필요한 작업과 비용을 설명합니다.</p></li>
+          <li><h3>수리·복구 마감</h3><p>확인된 지점을 중심으로 굴착·보수하고 작업 부위를 마감합니다.</p></li>
+          <li><h3>검증·사후 관리</h3><p>시공 후 확인을 거쳐 보증서를 발급하고 시공 부위를 책임집니다.</p></li>
+        </ol>
+      </div>
+    </section>
 
-        <div class="insurance-benefit-box">
-          <ul class="benefit-list">
-            <li>✅ <strong>아래층 피해 복구 비용:</strong> 도배, 천장 교체 등 100% 보상 지원</li>
-            <li>✅ <strong>우리 집 누수 공사 비용:</strong> 탐지 및 손해방지비용 항목 인정 지원</li>
-            <li>✅ <strong>무료 증빙 서류:</strong> 고화질 현장 사진 + 정밀 누수 소견서 무료 발급</li>
-          </ul>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="photo portrait">
+  <span class="photo-fallback" aria-hidden="true"><span>바른배관설비</span><span>사진을 불러오지 못했습니다</span></span>
+  <img src="images/optimized/2490da9529f7-480.webp" alt="바른배관설비 대표 이홍구" loading="lazy" decoding="async" fetchpriority="auto" srcset="images/optimized/2490da9529f7-320.webp 320w, images/optimized/2490da9529f7-480.webp 480w, images/optimized/2490da9529f7-640.webp 640w, images/optimized/2490da9529f7-960.webp 960w" sizes="auto, (max-width: 600px) calc(86vw - 41px), (max-width: 900px) calc(46vw - 22px), 360px" width="4284" height="4284">
+</div>
+        <div class="about-copy">
+          <p class="section-number">바른배관설비의 약속</p>
+          <h2 id="about-title">누가 오는지 알고,<br>안심하고 맡기실 수 있게.</h2>
+          <p>대표 이홍구입니다. 누수의 원인만큼이나 비용과 공사 범위가 걱정되실 겁니다. 상담부터 현장 진단, 수리와 마감까지 직접 살피겠습니다.</p>
+          <p>하루 한 현장에 집중하고, 작업을 마친 뒤에도 제가 시공한 부위를 책임집니다.</p>
+          <div class="signature"><span>바른배관설비 대표</span>이홍구</div>
+          <details class="promise-details">
+            <summary>2년 무상 A/S 범위 확인하기</summary>
+            <p>바른배관설비가 시공한 부위에 대해 2년 무상 보증서를 발급합니다. 해당 부위에 문제가 발생하면 48시간 이내 우선 재방문해 확인하고 처리합니다.</p>
+          </details>
         </div>
       </div>
+    </section>
 
-      <!-- (방문 전 꼭 확인하세요) -->
-      <div class="faq-wrapper">
-        <div class="faq-tag">방문 전 꼭 확인하세요</div>
-        <h2 class="faq-main-title">
-          방문 전 고객님들이<br>
-          <span class="blue-text">가장 많이 궁금해하시는 질문</span>
-        </h2>
-
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div><p class="section-number">04 / 자주 묻는 질문</p><h2 id="faq-title">전화하기 전,<br>궁금하셨을 이야기.</h2></div>
         <div class="faq-list">
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 누수 원인을 진짜 못 찾으면 비용을 단 1원도 안 받나요?</h3>
-            <p class="faq-answer">
-              <strong>네, 100% 사실입니다.</strong> 기술력에 자신 있습니다. 현장 탐지 및 점검 후 원인을 찾아내지 못했다면 출장비, 공압 검사비, 탐지비 포함 단 1원도 받지 않습니다. (원인 미해결 시 0원 원칙)
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 전화상으로 정확한 견적을 알 수 없나요?</h3>
-            <p class="faq-answer">
-              누수 현장은 배관 종류, 건물 구조, 누수 위치에 따라 작업 방식이 다릅니다. 전화상 저단가로 낚은 뒤 현장에서 수백만 원을 부르는 비양심 행태를 거부하기에, <strong>투명 정찰제 단가표 기준으로 현장 점검 후 정확히 안내</strong>해 드립니다.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 공사 후 또다시 물이 새면 어떻게 하나요?</h3>
-            <p class="faq-answer">
-              저희가 시공한 부위에 문제가 재발할 경우, 연락 회피 없이 <strong>48시간 이내 우선 재방문하여 끝까지 책임지고 무상 처리</strong>해 드립니다. (시공 부위 2년 무상 품질 보증서 발급)
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 야간이나 주말에도 출동이 가능한가요?</h3>
-            <p class="faq-answer">
-              <strong>네, 24시간 긴급 대응 시스템을 운영 중입니다.</strong> 누수는 시간이 지날수록 아래층 피해가 급증하는 긴급 상황이므로, 주말·야간 상관없이 편하게 전화 주시면 대표 엔지니어가 직접 상담해 드립니다.
-            </p>
-          </div>
+          <details>
+            <summary>전화로 정확한 견적을 알 수 있나요?</summary>
+            <p>전화로 증상을 상담하고, 현장에서 배관 종류·건물 구조·누수 위치를 확인한 뒤 단가표 기준으로 견적을 안내합니다. 필요한 작업 범위에 따라 총비용이 달라집니다.</p>
+          </details>
+          <details>
+            <summary>누수 원인을 찾지 못하면 비용이 있나요?</summary>
+            <p>원인을 찾아 누수를 해결하지 못한 경우 출장비·공압 검사비·탐지비를 받지 않는 원칙으로 운영합니다.</p>
+          </details>
+          <details>
+            <summary>야간이나 주말에도 상담할 수 있나요?</summary>
+            <p>24시간 긴급 상담을 운영합니다. 지역과 증상을 알려주시면 대표가 출동 가능 일정을 안내합니다.</p>
+          </details>
+          <details>
+            <summary>누수 보험 청구에 필요한 서류도 받을 수 있나요?</summary>
+            <p>현장 사진, 누수 소견서, 공사 견적서 발급을 무료로 지원합니다. 실제 보상 여부와 범위는 가입하신 보험사에 확인해 주세요.</p>
+          </details>
+          <details>
+            <summary>수리한 곳에서 다시 물이 새면 어떻게 하나요?</summary>
+            <p>시공 부위는 2년 무상 보증합니다. 문제가 발생하면 대표 직통 번호로 연락해 주세요. 48시간 이내 우선 재방문해 확인하고 처리합니다.</p>
+          </details>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-    
-  <!-- Section 10: 최종 CTA 및 긴급 출동 마감 -->
-  <section class="sec-final-cta">
-    <div class="container">
-      
-      <div class="final-card">
-        <div class="final-tag">🚨 긴급 출동 상담</div>
-        <h2 class="final-title">
-          망설이는 1시간 동안,<br>
-          <span class="blue-text">아래층 피해액은 2배로 늘어납니다</span>
-        </h2>
-        <p class="final-desc">
-          누수는 시간이 지날수록 천장 석고보드가 썩고 도배지가 합선되어 복구 비용이 기하급수적으로 증가합니다.<br>
-          <strong>원인 못 잡으면 0원!</strong> 부담 없이 지금 바로 대표 엔지니어에게 무료 전화 상담을 받아보세요.
-        </p>
-
-        <!-- 희소성 자극 박스 -->
-        <div class="scarcity-box">
-          <span class="scarcity-icon">⏰</span>
-          <div class="scarcity-text">
-            <strong>하루 오직 1현장만 책임 시공합니다</strong>
-            <p>최상의 공사 품질을 위해 당일 예약이 조기 마감될 수 있습니다.</p>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-inner">
+          <div>
+            <p class="section-number">서울·경기 24시 상담</p>
+            <h2 id="contact-title">지금 겪고 계신 증상,<br>먼저 들려주세요.</h2>
+            <p>지역과 물이 새는 위치, 시작된 시점을<br>아시는 만큼 말씀해 주시면 됩니다.</p>
           </div>
+          <div><a class="button button-primary" href="tel:010-2195-0351"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z"/></svg><span>010-2195-0351</span></a><small>바른배관설비 대표 직통 · 무료 전화상담</small></div>
         </div>
-
-        <!-- 최종 대형 CTA 전화 버튼 -->
-        <div class="cta-button-group">
-          <a href="tel:010-2195-0351" class="btn-final-call">
-            📞 24시 대표 직통 긴급 전화 연결 (무료 상담)
-          </a>
+        <div class="service-areas">
+          <strong>서울 전 지역 · 경기 전 지역</strong>
+          <p>강북 · 도봉 · 노원 · 성북 · 동대문 · 중랑 · 성동 · 광진 · 남양주 · 의정부 외 서울·경기 전역</p>
         </div>
-
-        <!-- 출동 거점 및 서비스 지역 안내 -->
-        <div class="service-area-box">
-          <h4 class="area-title">📍 신속 긴급 출동 가능 지역</h4>
-          <p class="area-desc">서울 전 지역 · 경기 전 지역 (24시간 연중무휴 긴급 출동)</p>
-          <div class="area-tags">
-            <span>강북구</span><span>도봉구</span><span>노원구</span><span>성북구</span>
-            <span>동대문구</span><span>중랑구</span><span>성동구</span><span>광진구</span>
-            <span>남양주</span><span>의정부</span><span>서울/경기 전역</span>
-          </div>
-        </div>
-
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
-    
-
-
-  <!-- 하단 푸터 -->
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-logo">바른배관설비</p>
-      <p class="footer-info">
-        상호명: 바른배관설비 | 대표: 이홍구<br>
-        사업자등록번호: 219-09-03166 | 문의전화: 010-2195-0351<br>
-      </p>
-      <p class="footer-copy">© 바른배관설비. 모든 권리 보유.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>바른배관설비</strong><p>대표 이홍구 · 사업자등록번호 219-09-03166<br>문의 <a href="tel:010-2195-0351">010-2195-0351</a></p></div>
+      <p>© 바른배관설비. 모든 권리 보유.</p>
     </div>
   </footer>
 
-  <!-- 하단 고정 전화 버튼 -->
-  <div class="sticky-footer">
-    <a href="tel:010-2195-0351" class="btn-sticky">
-      ⚡ 지금 바로 무료 견적·전화상담
-    </a>
-  </div>
-
-
-
-  <!-- 우측 하단 플로팅 챗봇 (카톡 제거 & 전화 단일 직통 연동) -->
-  <div class="floating-quick-menu">
-    <!-- 팝업 서브 카드 (전화 연결 단일 구성) -->
-    <div class="quick-popup-menu" id="quickPopupMenu">
-      <a href="tel:010-2195-0351" class="quick-pop-btn call">
-        <span class="icon">📞</span>
-        <div class="txt">
-          <strong>24시 대표 직통 전화</strong>
-          <small>클릭 시 대표 엔지니어 즉시 연결</small>
-        </div>
-      </a>
+  <aside class="sticky-call" aria-label="빠른 전화상담">
+    <div class="sticky-inner">
+      <p class="sticky-copy">누수, 혼자 고민하지 마세요.<span>서울·경기 대표 직접 상담</span></p>
+      <a class="button button-primary" href="tel:010-2195-0351"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a14 14 0 0 1-7-7l2-2-2-5Z"/></svg><span>24시 대표 직통 전화</span></a>
     </div>
-
-    <!-- 메인 플로팅 버튼 -->
-    <button type="button" class="btn-floating-main" id="btnQuickToggle">
-      <span class="main-icon">💬</span>
-      <span class="badge-pulse"></span>
-    </button>
-  </div>
-
-  <script src="script.js"></script>
+  </aside>
+  <dialog class="photo-viewer" id="photo-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-caption">
+    <header class="viewer-header">
+      <h2 id="viewer-title">현장 사진 크게 보기</h2>
+      <button class="viewer-button" type="button" data-viewer-close autofocus aria-label="확대 사진 닫기">닫기 ×</button>
+    </header>
+    <div class="viewer-stage">
+      <img id="viewer-image" alt="확대 현장 사진" decoding="async" hidden>
+      <p class="viewer-status" role="status">사진을 불러오는 중입니다.</p>
+    </div>
+    <footer class="viewer-footer">
+      <button class="viewer-button" type="button" data-viewer-step="-1" aria-label="이전 사진">←</button>
+      <p class="viewer-caption" id="viewer-caption" aria-live="polite"><span id="viewer-description"></span><span class="viewer-count"></span></p>
+      <button class="viewer-button" type="button" data-viewer-step="1" aria-label="다음 사진">→</button>
+    </footer>
+  </dialog>
+<script src="script.js" defer></script>
 
 </body>
 </html>
